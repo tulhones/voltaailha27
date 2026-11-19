@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Volta à Ilha 2027 · Time Piranhas</title>
+<meta name="description" content="Time Piranhas no 30º Revezamento Volta à Ilha. Sábado 17.04.2027, Florianópolis. 9 atletas, 5 vagas restantes. Entrada de R$ 890.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#6B1F3F">
+<meta property="og:title" content="Volta à Ilha 2027 · Time Piranhas">
+<meta property="og:description" content="Sábado 17.04.2027 · Florianópolis · 9 atletas, 5 vagas restantes · entrada de R$ 890">
+<meta property="og:image" content="https://timepiranhas.com/voltaailha27/vid/hero-h.jpg">
+<link rel="icon" href="assets/img/logo/piranha-mark.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<style>
+:root{--y:#E5572B;--vi:#6B1F3F;--red:#ff4a2b;--ok:#2fa356;--line:oklch(0.22 0.005 65);--sheet:#f7f5ec;--sheet-ink:#151511;--g:var(--gutter)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--ink);color:var(--paper);scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:var(--text-base);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;background:var(--ink)}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--y);outline-offset:3px}
+.wrap{max-width:var(--max-w);margin:0 auto;padding:0 var(--g)}
+.k{font-weight:600;font-size:var(--text-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--grey)}
+.k b{color:var(--y);font-weight:600}
+.hero .k{color:var(--paper-2)}
+.hero .k b{color:var(--paper)}
+.dot{display:inline-block;width:6px;height:6px;background:var(--y);margin:0 .7em;vertical-align:middle}
+.cta{display:inline-flex;align-items:center;gap:.8em;background:var(--y);color:var(--ink);font-weight:700;font-size:var(--text-sm);letter-spacing:.14em;text-transform:uppercase;padding:1.05em 1.5em;border:0;cursor:pointer;transition:transform var(--t-base) var(--ease-expo)}
+.cta:hover{transform:translateY(-2px)}
+.cta[disabled]{opacity:.5;cursor:wait;transform:none}
+.cta.line{background:transparent;color:var(--paper);outline:1.5px solid oklch(0.98 0.005 65 / .6);outline-offset:-1.5px}
+.grain{position:absolute;inset:-50%;pointer-events:none;opacity:.13;mix-blend-mode:overlay;z-index:2;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1s steps(4) infinite}
+@keyframes grain{25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-2%,-1%)}}
+
+.nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px var(--g);transition:background var(--t-base)}
+.nav.solid{background:oklch(0.05 0.005 65 / .88);backdrop-filter:blur(8px)}
+.nav img{height:34px;width:auto}
+.nav .cta{padding:.8em 1.1em;font-size:var(--text-xs)}
+
+.hero{position:relative;height:100svh;min-height:620px;overflow:hidden;isolation:isolate;display:flex;align-items:flex-end}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:brightness(.86)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,oklch(0.05 0.005 65 / .55) 0%,transparent 24%,oklch(0.05 0.005 65 / .28) 44%,oklch(0.05 0.005 65 / .92) 82%,var(--ink) 100%)}
+.hero__in{width:100%;padding-bottom:clamp(28px,5vh,56px);position:relative;z-index:3}
+.hero h1{font-family:var(--font-display);font-weight:400;line-height:.82;font-size:clamp(6rem,20.5vw,25rem);letter-spacing:-.005em;margin:.1em 0 .04em -.02em;white-space:nowrap}
+.hero h1 span{display:inline-block;overflow:hidden;vertical-align:bottom;padding-top:.2em;margin-top:-.2em}
+.hero h1 i{display:inline-block;font-style:normal;transform:translateY(102%);animation:up 1.1s var(--ease-expo) .2s forwards}
+.hero h1 .n i{color:var(--y);animation-delay:.32s}
+@keyframes up{to{transform:none}}
+.hero__sub{font-family:var(--font-display);font-size:var(--text-3xl);letter-spacing:.02em;line-height:1}
+.facts{display:grid;grid-template-columns:repeat(3,auto) 1fr;gap:18px clamp(28px,4vw,64px);align-items:end;margin-top:clamp(20px,3.4vh,36px);padding-top:clamp(16px,2.4vh,24px);border-top:1px solid oklch(0.98 0.005 65 / .2)}
+.facts dt{margin-bottom:6px}
+.facts dd{font-family:var(--font-display);font-size:var(--text-2xl);letter-spacing:.03em;line-height:1}
+.facts .cta{justify-self:end}
+
+.say{padding-top:clamp(110px,16vw,210px);padding-bottom:clamp(70px,10vw,130px)}
+.say p{font-family:var(--font-display);font-size:clamp(2.9rem,6.3vw,6.6rem);line-height:1;text-wrap:balance}
+.say span{display:block;color:var(--ink-3);transition:color .6s var(--ease-quart)}
+.say span.on{color:var(--paper)}
+.say span.v.on{color:var(--y)}
+
+.tr{padding-bottom:clamp(90px,12vw,160px);display:grid;grid-template-columns:minmax(220px,30%) 1fr;gap:0 clamp(28px,4.5vw,72px);align-items:start}
+.tr__map{grid-row:1/span 6;position:sticky;top:90px}
+.tr>*:not(.tr__map){grid-column:2}
+.map{display:block;width:100%;height:auto;max-height:calc(100vh - 120px);overflow:visible}
+.map .ilha{fill:var(--ink-2);stroke:var(--ink-4);stroke-width:1.2}
+.map .sg{fill:none;stroke:var(--ink-4);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;transition:stroke .35s,opacity .35s}
+.map .sg.feito{stroke:var(--paper-2);opacity:.55}
+.map .sg.hi{stroke:var(--paper);opacity:1}
+.map .sg--on{stroke:var(--y);stroke-width:6;stroke-dasharray:1;stroke-dashoffset:0;filter:drop-shadow(0 0 6px color-mix(in oklab,var(--y) 70%,transparent))}
+.map .sg--on.go{animation:draw 1.1s var(--ease-expo) both}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.map .pt{fill:var(--ink);stroke:var(--grey);stroke-width:1.4}
+.map .pt--a,.map .pt--b{fill:var(--y);stroke:var(--ink);stroke-width:2;transition:cx .5s var(--ease-expo),cy .5s var(--ease-expo)}
+.map .pt--a{fill:var(--paper)}
+.map .lg circle{fill:none;stroke:var(--paper);stroke-width:1.5;stroke-dasharray:3 3}
+.map .lg text{fill:var(--grey);font:600 13px var(--font-body);letter-spacing:.08em;text-transform:uppercase}
+.map .hit{fill:none;stroke:transparent;stroke-width:22;cursor:pointer;pointer-events:stroke}
+.tr__lg{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(18px,2vw,26px)}
+.tr__lg button{all:unset;display:inline-flex;align-items:center;gap:9px;cursor:pointer;color:var(--paper-2);font-size:var(--text-sm);font-weight:600;padding:8px 14px 8px 10px;border:1px solid var(--ink-4);background:var(--ink-2);transition:color .2s,border-color .2s,background .2s}
+.tr__lg button:hover,.tr__lg button:focus-visible,.tr__lg button.on{color:var(--ink);background:var(--y);border-color:var(--y)}
+.tr__lg button svg{color:var(--y)}
+.tr__lg button:hover svg,.tr__lg button.on svg,.tr__lg button:focus-visible svg{color:var(--ink)}
+.tr__lg svg{width:26px;height:26px}
+.ico{display:grid;grid-template-columns:repeat(19,1fr);gap:clamp(2px,.5vw,8px);margin-top:10px;justify-items:center;align-items:start}
+.ico span{display:grid;gap:4px;color:var(--paper-2);transition:color .22s,transform .22s}
+.ico span.on,.ico span.hi{color:var(--y)}
+.ico span.on{transform:scale(1.18)}
+.ico svg{width:clamp(15px,1.9vw,28px);height:clamp(15px,1.9vw,28px)}
+.bar.hi{background:var(--paper-2)}
+.tp__t{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:9px;padding:7px 14px 7px 9px;background:var(--ink-2);border:1px solid var(--ink-4);font-size:var(--text-sm);font-weight:500;line-height:1.2}
+.chip svg{width:28px;height:28px;color:var(--y)}
+.tr__hd{display:flex;justify-content:space-between;gap:20px;margin-bottom:18px}
+.bars{display:grid;grid-template-columns:repeat(19,1fr);gap:clamp(2px,.5vw,8px);align-items:end;height:clamp(150px,22vw,300px)}
+.bx{touch-action:pan-y;cursor:pointer}
+.bar{background:var(--ink-4);height:calc(var(--h)*1%);transform:scaleY(0);transform-origin:bottom;transition:transform 1s var(--ease-expo) calc(var(--i)*35ms),background .22s linear}
+.bars.in .bar{transform:none}
+.bar.on{background:var(--y)}
+.nums span{transition:color .22s linear}
+.nums span.on{color:var(--y)}
+.tp{display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,48px);margin-top:clamp(26px,3.4vw,44px);padding-top:clamp(20px,2.4vw,30px);border-top:1px solid var(--line);min-height:clamp(250px,19vw,290px)}
+.tp__n{font-family:var(--font-display);font-size:clamp(5.4rem,13vw,13rem);line-height:.8;color:var(--y);min-width:1.02em}
+.tp__r{font-family:var(--font-display);font-size:clamp(2rem,3.6vw,3.8rem);line-height:1;letter-spacing:.01em}
+.tp__r i{font-style:normal;color:var(--y);padding:0 .12em}
+.tp__f{display:grid;grid-template-columns:auto 1fr auto;gap:10px clamp(24px,4vw,64px);margin-top:clamp(14px,1.6vw,22px)}
+.tp__f dt{margin-bottom:4px}
+.tp__f dd{font-size:var(--text-lg);font-weight:500;line-height:1.25}
+.tp__x{margin-top:12px;font-family:var(--font-editorial);font-style:italic;font-size:var(--text-xl);color:var(--paper-2);min-height:1.5em}
+.tp.sw .tp__n,.tp.sw .tp__m>*{animation:tpin .42s var(--ease-expo) both}
+.tp.sw .tp__f{animation-delay:.05s}
+.tp.sw .tp__x{animation-delay:.09s}
+@keyframes tpin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.nums{display:grid;grid-template-columns:repeat(19,1fr);gap:clamp(2px,.5vw,8px);margin-top:8px;text-align:center;font-size:clamp(9px,.85vw,12px);font-weight:600;color:var(--grey)}
+.notes{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 28px;margin-top:20px}
+
+.reel{padding-bottom:clamp(100px,13vw,180px)}
+.reel__row{display:grid;grid-template-columns:1.25fr 1fr 1.25fr;gap:10px;align-items:end}
+.ph{overflow:hidden;background:var(--ink-2)}
+.ph:nth-child(1){aspect-ratio:4/3}
+.ph:nth-child(2){aspect-ratio:4/5}
+.ph:nth-child(3){aspect-ratio:4/3}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease-expo)}
+.ph:hover img{transform:scale(1.04)}
+.casa{padding-bottom:clamp(100px,13vw,180px)}
+.casa__hd{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(20px,2.6vw,34px)}
+.casa__hd h2{font-family:var(--font-display);font-size:clamp(2.6rem,5.4vw,5.4rem);line-height:.92;margin:0}
+.casa__hd h2 i{font-style:normal;color:var(--y)}
+.casa__f{display:flex;gap:10px 28px;flex-wrap:wrap;margin:0}
+.casa__f dd{font-size:var(--text-lg);font-weight:500;margin:4px 0 0}
+.casa__g{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;aspect-ratio:2.4/1}
+.casa__g figure{margin:0;overflow:hidden;background:var(--ink-2)}
+.casa__g figure:first-child{grid-row:1/3}
+.casa__g img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease-expo)}
+.casa__g figure:hover img{transform:scale(1.04)}
+.casa__x{margin-top:16px;color:var(--paper-2);max-width:62ch}
+.casa__x a{color:var(--y)}
+.casa__d{font-family:var(--font-editorial);font-style:italic;font-size:clamp(1.3rem,2.2vw,2rem);color:var(--paper-2);margin:.3em 0 0}
+.casa__d i{color:var(--y)}
+.amen{list-style:none;margin:clamp(18px,2.4vw,30px) 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.amen li{display:flex;align-items:center;gap:12px;padding:14px 14px;border:1px solid var(--line);background:var(--ink-2);font-weight:500;font-size:var(--text-sm);line-height:1.25}
+.amen svg{width:30px;height:30px;flex:0 0 auto;color:var(--y)}
+@media (max-width:1000px){.amen{grid-template-columns:repeat(2,1fr)}}
+.cam{padding-bottom:clamp(100px,13vw,180px)}
+.cam__in{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(28px,5vw,80px);align-items:center;border:1px dashed var(--ink-4);padding:clamp(24px,4vw,56px)}
+.cam h2{font-family:var(--font-display);font-size:clamp(2.6rem,5.4vw,5.4rem);line-height:.92;margin:.25em 0 .3em}
+.cam h2 i{font-style:normal;color:var(--y)}
+.cam p{color:var(--paper-2);max-width:40ch}
+.cam__tag{display:inline-block;font-family:var(--font-display);font-size:clamp(1.3rem,1.8vw,1.7rem);letter-spacing:.06em;color:var(--ink);background:var(--y);padding:.18em .6em .1em;transform:rotate(-3deg)}
+.cam__tees{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,2vw,24px)}
+.tee{margin:0;text-align:center;filter:grayscale(1)}
+.tee svg{width:100%;height:auto;display:block}
+.tee__b{fill:color-mix(in oklab,var(--ink) 88%,var(--paper));stroke:var(--grey-soft);stroke-width:2;stroke-dasharray:6 6}
+.tee__n{fill:var(--ink);stroke:var(--grey-soft);stroke-width:2}
+.tee__l{fill:none;stroke:var(--grey-soft);stroke-width:2}
+.tee__ph{fill:none;stroke:var(--grey);stroke-width:1.5;stroke-dasharray:4 5}
+.tee__q{fill:var(--grey);font:400 54px var(--font-display);text-anchor:middle}
+.tee__t{fill:none;stroke:var(--grey);stroke-width:1.2;font:400 40px var(--font-display);text-anchor:middle;letter-spacing:.02em}
+.tee__s{fill:var(--grey);font:600 11px var(--font-body);letter-spacing:.14em;text-anchor:middle}
+.tee figcaption{margin-top:8px}
+.cam__soon{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%) rotate(-8deg);font-family:var(--font-display);font-size:clamp(2.4rem,5vw,4.6rem);line-height:1;letter-spacing:.04em;color:var(--paper);background:var(--ink);border:2px solid var(--paper);padding:.12em .45em .04em;white-space:nowrap;pointer-events:none}
+@media (max-width:760px){.cam__in{grid-template-columns:1fr}}
+@media (max-width:760px){.casa__g{grid-template-columns:1fr 1fr;grid-template-rows:none;aspect-ratio:auto}.casa__g figure{aspect-ratio:4/3}.casa__g figure:first-child{grid-row:auto;grid-column:1/-1}}
+
+.a4sec{position:relative;padding:clamp(20px,4vw,50px) 0 clamp(110px,14vw,200px);overflow:hidden}
+.desk{display:grid;place-items:center}
+.a4{width:min(740px,100%);background:var(--sheet);color:var(--sheet-ink);padding:clamp(28px,7%,60px) clamp(22px,7%,64px);position:relative;font-size:clamp(.86rem,1.6vw,1rem);line-height:1.5;box-shadow:0 1px 0 #dedbcc,0 60px 100px rgba(0,0,0,.6),0 20px 34px rgba(0,0,0,.35);transform:rotate(-3deg) translateY(70px);opacity:.6;transition:transform 1.3s var(--ease-expo),opacity 1s}
+.a4.in{transform:rotate(-1.2deg);opacity:1}
+.a4::before{content:"";position:absolute;top:-14px;left:50%;width:120px;height:30px;transform:translateX(-50%) rotate(2deg);background:oklch(0.92 0.02 95 / .7);box-shadow:0 1px 2px rgba(0,0,0,.15)}
+.a4__hd{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:3px solid var(--sheet-ink);padding-bottom:.9em;margin-bottom:1em}
+.a4__hd h3{font-family:var(--font-display);font-weight:400;font-size:2.7em;line-height:.88}
+.a4__hd h3 small{display:block;font-family:var(--font-editorial);font-style:italic;font-size:.42em;margin-top:.35em;color:#55554b}
+.a4__hd img{width:3.6em;filter:invert(1)}
+.a4 h4{font-family:var(--font-display);font-weight:400;font-size:1.5em;letter-spacing:.04em;margin:1.05em 0 .3em;line-height:1}
+.a4 ul{list-style:none}
+.a4 li{display:grid;grid-template-columns:5.4em 1fr;gap:.5em;padding:.08em 0}
+.a4 li>b:first-child{font-family:var(--font-display);font-weight:400;font-size:1.2em;letter-spacing:.03em;line-height:1.25}
+.a4 .rules li{grid-template-columns:1.5em 1fr}
+.a4 .inc{display:grid;grid-template-columns:1fr 1fr;gap:0 1.2em}
+.a4 .inc li{grid-template-columns:1.4em 1fr}
+.a4 .yes{color:var(--ok);font-weight:700}
+.a4 .no{color:#8b8b7c;font-weight:700}
+.a4 .px li{grid-template-columns:1fr auto;border-bottom:1px dashed #b8b5a6;padding:.25em 0}
+.a4 .px b{font-family:var(--font-display);font-weight:400;font-size:1.35em;letter-spacing:.03em;line-height:1.1}
+mark{color:inherit;background:linear-gradient(transparent 14%,var(--y) 14%,var(--y) 86%,transparent 86%) no-repeat 0 0/0 100%;padding:0 .15em;transition:background-size .9s var(--ease-expo) .7s}
+.a4.in mark{background-size:100% 100%}
+
+.ins{position:relative;padding:clamp(90px,12vw,160px) 0 clamp(80px,10vw,140px);background:var(--vi);--line:oklch(1 0 0 / .18);--grey:oklch(0.92 0.02 20 / .78);--ink-4:oklch(1 0 0 / .38)}
+.ins :focus-visible{outline-color:var(--paper)}
+.ins__hd{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:clamp(36px,5vw,64px)}
+.ins h2{font-family:var(--font-display);font-weight:400;font-size:clamp(4.4rem,11vw,11rem);line-height:.84}
+.ins h2 em{display:block;font-family:var(--font-editorial);font-style:italic;font-size:.36em;color:var(--paper-2);line-height:1.15}
+.vagas{display:flex;align-items:center;gap:10px}
+.vagas i{width:8px;height:8px;background:var(--paper);animation:blink 1.6s steps(2) infinite}
+@keyframes blink{50%{opacity:.2}}
+.form{max-width:1000px}
+.blk{display:grid;grid-template-columns:200px 1fr;gap:20px 40px;padding:28px 0;border-top:1px solid var(--line)}
+.blk[hidden]{display:none}
+.blk>h3{font-family:var(--font-display);font-weight:400;font-size:var(--text-3xl);line-height:1;letter-spacing:.02em}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px}
+.fld{display:grid;gap:6px;align-content:start}
+.fld>label{font-weight:600;font-size:var(--text-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+input[type=text],input[type=email],input[type=tel]{width:100%;background:transparent;border:0;border-bottom:1.5px solid var(--ink-4);padding:10px 0;font-size:var(--text-lg);color:var(--paper);border-radius:0;transition:border-color var(--t-fast)}
+input::placeholder{color:oklch(1 0 0 / .42)}
+input:focus{outline:none;border-color:var(--paper)}
+[aria-invalid=true]{border-color:var(--paper)!important;border-bottom-width:3px!important}
+.pay{display:grid;grid-template-columns:1fr 200px;gap:28px;align-items:start}
+.pay__tot{font-family:var(--font-display);font-size:clamp(4rem,8vw,7rem);line-height:.85;color:var(--paper)}
+.pay__det{font-weight:600;font-size:var(--text-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:10px 0 16px}
+.pay__code{font-family:ui-monospace,monospace;font-size:11px;word-break:break-all;color:var(--grey);border:1px solid var(--ink-4);padding:10px 12px;max-height:60px;overflow:auto;margin-bottom:12px}
+.pay__qr{background:var(--paper);padding:8px}
+.pay__qr svg{width:100%;height:auto;display:block}
+.pay__key{font-size:var(--text-xs);color:var(--grey);margin-top:10px}
+.file{display:flex;align-items:center;gap:12px;border:1.5px dashed var(--ink-4);padding:16px;cursor:pointer;position:relative}
+.file input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.file[data-ok="1"]{border-style:solid;border-color:var(--paper);color:var(--paper)}
+.opt{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px;min-width:0}
+.opt legend{font-weight:600;font-size:var(--text-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-bottom:8px;padding:0}
+.opt label{position:relative;cursor:pointer}
+.opt input{position:absolute;opacity:0;inset:0}
+.opt span{display:inline-block;padding:11px 18px;border:1px solid var(--ink-4);font-weight:500;transition:background .2s,color .2s,border-color .2s}
+.opt input:checked+span{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.opt input:focus-visible+span{outline:2px solid var(--y);outline-offset:2px}
+.opt[disabled]{opacity:.35}
+.blk__x{color:var(--paper-2);margin:-4px 0 16px}
+.chk{display:flex;gap:12px;align-items:flex-start;cursor:pointer;color:var(--paper-2);grid-column:1/-1}
+.chk input{width:20px;height:20px;accent-color:var(--paper);flex:0 0 auto;margin-top:2px}
+.err{background:var(--paper);color:var(--vi);padding:12px 16px;font-weight:700;margin-top:16px}
+.err[hidden]{display:none}
+.send{width:100%;justify-content:center;padding:1.4em;margin-top:22px;font-size:var(--text-base)}
+.closed{border:1.5px solid var(--paper);color:var(--paper);padding:18px;font-weight:600;margin-bottom:24px}
+.closed[hidden]{display:none}
+.lot{display:grid;gap:10px;justify-items:end;text-align:right}
+.lot__d{display:flex;gap:6px}
+.lot__d i{width:18px;height:18px;border:1.5px solid var(--paper);transition:background .3s}
+.lot__d i.on{background:var(--paper)}
+.plan{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,56px);align-items:end;padding:clamp(22px,3vw,36px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:clamp(28px,4vw,48px)}
+.plan__tot{display:grid;gap:6px}
+.plan__tot b{font-family:var(--font-display);font-weight:400;font-size:clamp(4.2rem,9vw,8.4rem);line-height:.82}
+.plan__s{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:6px}
+.plan__s li{border:1px solid var(--ink-4);padding:14px 14px 12px;display:grid;gap:4px;align-content:start}
+.plan__s li b{font-family:var(--font-display);font-weight:400;font-size:clamp(1.8rem,2.8vw,2.6rem);line-height:.9}
+.plan__s li small{font-size:var(--text-xs);color:var(--grey)}
+.plan__s li.now{background:var(--paper);color:var(--vi);border-color:var(--paper)}
+.plan__s li.now .k,.plan__s li.now small{color:var(--vi)}
+.plan__cc{grid-column:1/-1;margin:4px 0 0;color:var(--paper-2);font-size:var(--text-sm)}
+.plan__cc a{color:var(--paper);text-decoration:underline;text-underline-offset:3px}
+.form{max-width:none;display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,20px)}
+.form>.closed,.form>.st--car,.form>.st--tee,.form>.st--pix,.form>.st--ok{grid-column:1/-1}
+.tees{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,56px);align-items:center}
+.tees__v{display:grid;grid-template-columns:auto auto;gap:10px;align-items:end;justify-content:start}
+.tees__v p{grid-column:1/-1;max-width:24ch}
+.mtee{width:clamp(56px,6vw,76px);height:auto}
+.mtee path{fill:var(--paper);stroke:none}
+.mtee+.mtee path{fill:var(--y)}
+.lot{justify-items:start!important;text-align:left!important}
+.st{border:1px solid var(--line);background:oklch(0 0 0 / .14);padding:clamp(20px,2.6vw,34px);margin:0;min-width:0;display:grid;gap:18px;align-content:start}
+.st[hidden]{display:none}
+.st__h{display:flex;align-items:baseline;gap:12px;font-family:var(--font-display);font-size:var(--text-3xl);line-height:1;letter-spacing:.02em;padding:0;margin-bottom:4px;float:left;width:100%}
+.st__h span{font-size:.6em;color:var(--y);letter-spacing:.06em}
+.st__h+*{clear:both}
+.st__x{font-size:var(--text-sm);color:var(--grey);margin:0}
+.st__x--top{color:var(--paper-2)}
+select{width:100%;appearance:none;background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23fff' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 4px center;border:0;border-bottom:1.5px solid var(--ink-4);padding:10px 22px 10px 0;font:inherit;font-size:var(--text-base);color:var(--paper);border-radius:0;cursor:pointer;text-overflow:ellipsis}
+select:focus{outline:none;border-bottom-color:var(--paper)}
+select option{color:#111;background:#fff}
+.car{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(20px,4vw,56px);align-items:center}
+.car__v{display:grid;gap:12px}
+.car__g{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.car__g figure{margin:0;overflow:hidden;aspect-ratio:4/3;background:var(--ink-2)}
+.car__g img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s var(--ease-expo)}
+.car__g figure:hover img{transform:scale(1.04)}
+.car__cr{font-size:var(--text-sm);color:var(--paper-2);margin:0}
+.suv{width:100%;height:auto;display:block}
+.suv__b{fill:var(--paper)}
+.suv__w{fill:var(--vi);opacity:.85}
+.suv__l{fill:none;stroke:var(--vi);stroke-width:3;stroke-linecap:round}
+.suv__r{fill:var(--ink)}
+.suv__h{fill:var(--grey)}
+.car__pair svg:last-child .suv__b{fill:var(--y)}
+.car__q{display:grid;gap:18px}
+.car__f{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.car__f li{display:flex;align-items:baseline;gap:12px;color:var(--paper-2)}
+.car__f b{font-family:var(--font-display);font-weight:400;font-size:2.2rem;line-height:.8;color:var(--paper);min-width:.7em}
+.pix{display:grid;grid-template-columns:200px 1fr;gap:clamp(20px,3vw,40px);align-items:start}
+.pix__qr{background:var(--paper);padding:10px}
+.pix__qr svg{width:100%;height:auto;display:block}
+.pix__m{display:grid;gap:8px;justify-items:start;min-width:0}
+.pix__m .pay__code{width:100%;margin:6px 0}
+.pix__v{font-family:var(--font-display);font-weight:400;font-size:clamp(4rem,8vw,6.6rem);line-height:.82}
+.pix__up{margin-top:6px}
+.st--ok .send{margin-top:4px}
+@media (max-width:900px){
+  .plan{grid-template-columns:1fr}
+  .plan__s{grid-template-columns:repeat(3,1fr)}
+  .plan__s li.now{grid-column:1/-1}
+  .form{grid-template-columns:1fr}
+  .car{grid-template-columns:1fr}
+  .tees{grid-template-columns:1fr}
+  .lot{justify-items:start;text-align:left}
+}
+@media (max-width:560px){
+  .pix{grid-template-columns:1fr}
+  .pix__qr{max-width:200px}
+  .plan__s li{padding:12px 10px 10px}
+  .plan__s li .k{letter-spacing:.06em;white-space:nowrap}
+}
+
+
+footer{padding:clamp(70px,10vw,130px) 0 48px;text-align:center;border-top:1px solid var(--line)}
+footer .fish{width:min(52vw,360px);margin:0 auto 36px}
+.social{display:flex;justify-content:center;gap:12px}
+.social a{width:56px;height:56px;border:1.5px solid var(--ink-4);display:grid;place-items:center;transition:all var(--t-fast)}
+.social a:hover{background:var(--y);border-color:var(--y);color:var(--ink)}
+.social svg{width:24px;height:24px;fill:currentColor}
+
+@media (max-width:1000px){
+  .reel__row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;margin:0 calc(var(--g)*-1);padding:0 var(--g);scrollbar-width:none}
+  .reel__row::-webkit-scrollbar{display:none}
+  .ph{flex:0 0 76vw;max-width:360px;scroll-snap-align:start}
+  .facts{grid-template-columns:repeat(3,auto)}
+  .facts .cta{grid-column:1/-1;justify-self:start}
+  .blk{grid-template-columns:1fr}
+  .pay{grid-template-columns:1fr}
+  .pay__qr{max-width:200px}
+}
+@media (max-width:640px){
+  .hero h1{white-space:normal;font-size:33vw;line-height:.84}
+  .hero h1 .n{display:block}
+  .facts{grid-template-columns:1fr 1fr;align-items:start}
+  .tr{grid-template-columns:1fr minmax(110px,36%);column-gap:14px}
+  .tr>*:not(.tr__map){grid-column:1/-1}
+  .tr__hd{grid-row:1}.bx{grid-row:2}.tr__lg{grid-row:3}
+  .tr>.tp{grid-column:1;grid-row:4;grid-template-columns:1fr;gap:6px;min-height:0}
+  .tr__map{grid-column:2;grid-row:4;position:relative;top:0;margin-top:clamp(26px,3.4vw,44px)}
+  .map{max-height:none}
+  .map .lg text{font-size:26px}
+  .tr>.tp{min-height:440px;align-content:start}
+  .tp__n{font-size:4.6rem}
+  .tp__r{font-size:1.75rem}
+  .tp__f{grid-template-columns:1fr;gap:12px}
+  .tp__x{font-size:var(--text-lg)}
+  .grid2{grid-template-columns:1fr}
+  .a4 .inc{grid-template-columns:1fr}
+  .a4 li{grid-template-columns:4.6em 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .a4{opacity:1;transform:none}
+  .bar{transform:none}
+  .hero h1 i{transform:none}
+  mark{background-size:100% 100%}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="https://timepiranhas.com" aria-label="Piranhas"><img src="assets/img/logo/piranha-mark.png" alt="Piranhas"></a>
+  <a class="cta" href="#inscricao">→ estou dentro</a>
+</nav>
+
+<header class="hero">
+  <video id="hv" autoplay muted loop playsinline preload="auto"></video>
+  <script>(function(){var v=document.getElementById("hv"),s=matchMedia("(max-aspect-ratio: 1/1)").matches?"v":"h";v.poster="vid/hero-"+s+".jpg";if(matchMedia("(prefers-reduced-motion: reduce)").matches){v.removeAttribute("autoplay");v.removeAttribute("loop")}v.src="vid/hero-"+s+".mp4"})();</script>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <p class="k"><b>Time Piranhas</b><span class="dot"></span>9 atletas, 5 vagas restantes</p>
+    <h1 aria-label="Volta à Ilha"><span><i>Volta à</i></span> <span class="n"><i>Ilha</i></span></h1>
+    <p class="hero__sub">30º Revezamento. Florianópolis, sábado 17.04.2027.</p>
+    <dl class="facts">
+      <div><dt class="k">distância</dt><dd>140 km · 19 trechos</dd></div>
+      <div><dt class="k">time</dt><dd>9 atletas, 5 vagas restantes</dd></div>
+      <div><dt class="k">entrada</dt><dd>R$ 890</dd></div>
+      <a class="cta" href="#inscricao">→ estou dentro</a>
+    </dl>
+  </div>
+</header>
+
+<section class="say wrap" aria-label="A prova">
+  <p id="say">
+    <span>O Time Piranhas quer dar a volta</span>
+    <span>na ilha de Floripa em revezamento:</span>
+    <span class="v">140 km num sábado só,</span>
+    <span>com 9 atletas chegando juntos.</span>
+  </p>
+</section>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 5 21M15 3l4 18"/><path d="M12 4v3M12 10.5v3M12 17v3.5"/></symbol><symbol id="i-c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="5.5" rx="1.2"/><rect x="13" y="4" width="8" height="5.5" rx="1.2"/><rect x="3" y="14.5" width="4" height="5.5" rx="1.2"/><rect x="9" y="14.5" width="12" height="5.5" rx="1.2"/></symbol><symbol id="i-p" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M12 1.8v1.2M5.6 4.6l.9.9M18.4 4.6l-.9.9"/><path d="M2 15.5c2.5-2 4.5-2 7 0s4.5 2 7 0 4-2 6 0M2 20.5c2.5-2 4.5-2 7 0s4.5 2 7 0 4-2 6 0"/></symbol><symbol id="i-t" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20 9 7l4.5 7.5L16 11l6 9z"/><path d="M8 20c1.5-2 3.5-2.4 5-4" stroke-dasharray="1.6 2"/></symbol><symbol id="i-f" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18c3.5-6 16.5-6 20 0"/><circle cx="7" cy="20.5" r=".9"/><circle cx="12" cy="20.5" r=".9"/><circle cx="17" cy="20.5" r=".9"/><circle cx="9.5" cy="14.6" r=".9"/><circle cx="14.5" cy="14.6" r=".9"/><path d="M8 7.5c.8-1.8 2.6-1.8 3.4 0M12.6 5.5c.8-1.8 2.6-1.8 3.4 0"/></symbol><symbol id="i-d" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19c2.6-7 7.4-8 10.5-1.5"/><path d="M8.5 19c3-9 10.5-10 13.5 0"/><path d="M2 19h20"/></symbol><symbol id="i-e" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21c.6-5 3.4-7.5 3.4-11.5S9.6 4.2 9.6 3M16 21c-.6-5-3-7.5-3-11.5s1.4-5.3 1.4-6.5"/><circle cx="4" cy="17" r="1.1"/><circle cx="20" cy="14" r="1.1"/><circle cx="4.5" cy="10" r="1.1"/><circle cx="19.5" cy="20.5" r="1.1"/></symbol></defs></svg>
+<section class="tr wrap" aria-label="Distância dos 19 trechos">
+  <div class="tr__hd"><span class="k">os 19 trechos</span><span class="k">km por trecho · mapa aproximado</span></div>
+  <div class="tr__map"><svg class="map" id="map" viewBox="0 0 428 956" role="img" aria-label="Mapa da Ilha de Santa Catarina com o percurso aproximado dos 19 trechos"><path class="ilha" d="M14.0 786.4 L16.1 790.0 L17.1 789.5 L22.9 792.1 L28.5 797.1 L28.6 799.2 L27.5 800.0 L28.6 804.7 L25.1 809.7 L26.5 811.9 L25.6 814.4 L25.9 819.5 L28.0 820.8 L32.7 827.1 L34.0 830.8 L33.7 836.6 L38.3 836.1 L42.7 837.0 L43.8 839.2 L45.0 838.5 L45.7 839.6 L50.1 841.1 L52.2 844.0 L51.7 845.2 L52.7 847.4 L51.7 848.1 L50.7 851.4 L45.7 857.1 L43.8 857.5 L39.8 865.5 L41.7 868.9 L41.5 871.7 L45.4 872.6 L49.8 876.8 L50.8 878.8 L50.4 882.1 L51.4 883.9 L53.0 884.2 L53.9 888.2 L51.1 893.0 L45.3 896.2 L45.6 897.6 L42.2 901.3 L42.5 905.7 L41.3 908.6 L41.8 910.0 L37.2 914.9 L37.4 919.5 L34.4 924.8 L34.3 929.3 L32.4 935.0 L35.2 937.0 L37.8 934.5 L39.8 934.0 L40.8 931.7 L47.1 931.9 L52.7 935.1 L51.6 938.8 L53.0 942.2 L56.7 938.7 L59.3 937.6 L60.1 935.9 L72.9 928.3 L77.8 924.2 L80.1 924.4 L83.9 919.1 L88.5 900.5 L89.0 897.0 L88.4 892.4 L91.9 889.7 L97.2 877.9 L94.6 873.5 L94.4 870.8 L95.8 867.5 L99.8 864.2 L99.4 861.6 L97.7 859.5 L97.7 856.6 L104.4 845.3 L115.2 832.8 L124.4 827.1 L128.7 825.6 L134.4 824.8 L143.5 826.4 L148.3 829.7 L145.7 842.0 L151.3 849.1 L155.9 850.6 L159.7 849.5 L163.1 852.8 L171.4 851.0 L174.5 848.6 L177.3 844.0 L181.3 844.1 L183.3 842.5 L185.6 839.2 L185.8 835.2 L189.0 834.7 L190.7 830.8 L190.6 829.1 L186.4 825.1 L185.2 821.9 L181.9 819.6 L181.3 817.8 L185.8 808.4 L192.0 801.6 L194.8 802.8 L198.2 802.6 L200.7 805.5 L204.0 802.8 L203.9 800.8 L200.8 795.3 L201.9 788.7 L199.9 786.3 L195.3 786.0 L186.7 782.1 L183.4 776.1 L183.3 773.6 L182.1 772.5 L176.6 773.5 L170.4 776.9 L167.6 776.9 L163.2 771.9 L159.7 764.0 L160.3 762.7 L162.3 761.9 L163.1 760.2 L162.0 758.8 L163.9 757.8 L163.8 756.7 L160.6 758.3 L159.8 761.7 L158.6 762.4 L152.5 760.1 L149.0 755.6 L146.5 745.2 L146.8 723.5 L149.6 712.7 L151.4 708.6 L153.9 706.1 L155.1 701.6 L155.2 697.7 L154.4 696.6 L155.1 693.6 L162.3 678.5 L172.0 663.5 L180.2 654.9 L191.3 646.9 L193.0 643.8 L196.4 630.4 L199.5 608.5 L203.1 595.8 L213.2 572.6 L223.4 554.7 L239.1 531.8 L249.7 519.3 L253.9 516.7 L255.1 517.1 L254.7 518.6 L256.2 519.5 L258.3 517.9 L259.6 518.2 L258.3 517.0 L258.1 513.0 L259.3 511.5 L259.1 509.2 L260.1 506.3 L263.8 504.8 L264.1 501.6 L266.8 501.3 L270.4 499.0 L270.7 497.7 L269.3 494.7 L270.0 493.5 L274.2 493.4 L278.9 490.0 L282.0 491.8 L283.4 490.9 L281.4 486.2 L282.2 483.4 L279.3 485.2 L276.3 482.3 L275.7 474.4 L276.4 471.8 L280.0 464.8 L285.6 456.8 L288.0 455.8 L288.0 457.4 L288.8 456.4 L289.9 457.5 L288.4 454.7 L288.0 451.3 L292.8 444.2 L299.0 441.7 L302.1 442.4 L303.0 444.2 L305.2 443.7 L305.8 439.2 L307.0 438.6 L308.0 435.7 L307.8 433.5 L306.2 432.8 L306.3 429.7 L304.7 424.4 L309.1 420.7 L310.5 415.5 L312.9 414.0 L314.0 414.4 L314.5 412.7 L317.8 409.3 L318.4 406.9 L318.2 403.4 L317.1 401.7 L314.5 400.5 L311.5 400.5 L309.7 402.6 L308.0 402.3 L302.6 406.0 L301.5 405.2 L301.5 402.1 L300.5 401.9 L299.1 403.4 L299.3 405.1 L296.3 405.1 L294.0 403.5 L291.6 400.1 L288.6 393.2 L286.8 379.8 L287.1 370.8 L289.1 357.7 L295.4 335.5 L304.7 313.7 L314.7 293.5 L329.3 269.1 L343.6 248.8 L355.1 234.4 L365.1 224.2 L373.8 217.5 L379.4 219.5 L381.5 217.4 L384.1 216.6 L383.1 215.8 L383.5 214.2 L382.6 211.3 L386.5 202.1 L387.0 198.4 L381.1 186.4 L383.9 173.9 L392.0 154.9 L403.6 150.3 L406.1 150.5 L406.7 151.3 L409.2 150.5 L409.3 151.0 L410.9 147.4 L409.5 145.8 L410.5 145.5 L410.1 142.8 L414.0 134.8 L409.6 132.0 L408.1 127.8 L405.8 126.6 L403.1 119.9 L401.9 119.1 L399.8 120.6 L397.5 128.8 L394.0 134.0 L394.0 140.7 L390.4 142.2 L381.2 141.4 L372.1 137.7 L364.3 132.9 L355.4 124.7 L344.0 109.6 L338.0 98.0 L333.0 84.7 L335.0 75.6 L333.6 71.2 L330.5 67.2 L329.6 64.0 L325.5 65.5 L322.8 64.1 L320.1 64.9 L317.1 59.0 L315.1 50.8 L314.1 39.8 L314.4 37.7 L316.6 37.0 L317.6 34.4 L320.2 22.1 L318.8 19.6 L314.2 18.4 L311.1 14.4 L308.5 14.1 L307.0 15.7 L305.6 15.5 L303.5 20.3 L302.6 30.6 L299.2 31.6 L293.1 31.3 L287.1 29.6 L286.5 28.0 L282.4 26.8 L281.5 26.8 L280.2 28.9 L279.5 31.9 L274.1 39.8 L275.9 42.2 L278.6 43.3 L280.7 46.8 L281.6 50.7 L285.8 54.4 L287.2 57.2 L287.9 59.8 L286.7 66.0 L288.2 70.0 L289.1 77.2 L288.1 82.2 L286.2 86.0 L274.6 96.2 L260.0 103.1 L245.1 106.9 L219.6 108.9 L207.9 106.9 L207.0 108.6 L204.4 108.9 L201.6 110.2 L200.7 112.0 L197.9 112.8 L195.2 119.5 L196.6 123.2 L193.3 126.2 L192.9 128.0 L185.0 130.2 L165.1 128.6 L154.7 126.8 L144.5 123.0 L131.9 116.4 L126.4 115.2 L126.2 118.9 L123.8 122.6 L122.8 131.4 L119.8 135.2 L119.7 137.3 L116.4 144.1 L113.9 145.3 L100.6 147.8 L90.4 152.7 L87.3 156.1 L83.8 163.8 L75.6 172.6 L79.5 173.0 L82.5 171.6 L84.3 167.4 L88.4 164.6 L87.2 161.6 L89.8 159.1 L95.4 158.8 L98.3 161.1 L103.8 160.3 L105.7 161.8 L106.7 159.9 L112.5 157.0 L116.0 157.3 L120.2 160.9 L122.3 165.7 L126.2 170.2 L127.9 174.0 L127.9 176.6 L126.1 177.9 L125.0 181.1 L128.1 187.0 L127.9 188.2 L120.8 186.3 L118.0 184.3 L116.6 184.8 L113.7 183.7 L111.8 195.5 L109.6 196.4 L106.8 199.6 L102.5 196.8 L101.4 198.1 L102.5 200.7 L100.8 203.3 L99.8 208.1 L95.8 208.6 L93.0 211.0 L91.7 215.8 L92.6 219.8 L91.4 224.2 L91.9 226.3 L89.4 229.1 L92.6 233.1 L89.5 238.4 L91.0 238.4 L92.4 235.9 L97.9 237.8 L100.1 236.2 L109.0 239.5 L111.1 241.6 L110.7 242.9 L117.3 246.8 L116.4 256.8 L118.4 265.6 L120.4 267.4 L120.6 269.1 L123.7 270.5 L126.1 273.5 L126.8 275.9 L129.8 277.5 L132.9 285.0 L132.3 290.0 L129.2 294.3 L127.1 295.8 L121.4 295.9 L115.8 302.8 L111.0 306.2 L111.4 308.5 L113.6 310.1 L114.5 313.5 L116.3 315.4 L115.9 319.0 L112.8 323.9 L112.8 326.4 L105.3 331.9 L105.1 335.3 L115.7 341.5 L122.4 347.9 L127.6 346.4 L133.1 346.5 L144.3 350.4 L146.0 352.9 L144.6 355.4 L143.4 355.7 L140.6 362.8 L136.5 365.3 L134.7 369.6 L132.4 372.2 L130.0 372.9 L130.3 374.8 L127.5 378.6 L124.6 380.0 L120.9 378.6 L119.5 379.3 L118.8 378.5 L118.0 379.5 L119.3 383.6 L120.7 384.2 L121.7 386.5 L123.4 386.8 L129.7 392.5 L131.5 397.8 L128.6 405.2 L127.7 405.7 L125.7 404.1 L123.4 403.7 L114.5 405.3 L112.2 401.7 L108.7 403.4 L96.7 400.3 L93.1 396.9 L94.0 399.0 L92.6 401.6 L88.5 403.3 L81.9 410.4 L78.9 423.7 L71.4 427.2 L69.9 426.9 L68.5 428.8 L63.1 431.2 L58.0 431.7 L55.9 433.6 L48.9 436.5 L47.4 438.3 L46.9 441.5 L45.6 441.8 L46.3 443.0 L45.7 445.0 L50.9 449.7 L51.0 451.2 L49.6 453.2 L50.5 454.8 L54.5 457.7 L64.3 462.3 L70.0 468.4 L71.2 470.3 L70.6 471.0 L72.6 473.2 L72.0 475.6 L70.2 475.6 L70.3 477.3 L72.8 477.7 L72.0 479.0 L70.1 479.5 L70.4 483.8 L73.0 483.4 L76.0 485.0 L76.9 487.3 L79.8 489.2 L79.7 491.9 L87.8 481.8 L90.9 483.6 L91.3 480.6 L92.7 484.8 L94.2 484.9 L95.3 486.1 L96.4 484.6 L95.9 486.0 L97.6 485.7 L99.0 487.2 L100.3 485.9 L99.3 487.4 L103.2 491.2 L105.1 489.9 L103.3 492.1 L104.6 494.7 L107.8 494.8 L105.7 496.3 L106.7 497.2 L106.5 499.7 L107.9 501.1 L107.2 502.1 L109.0 502.1 L107.2 502.5 L109.2 503.6 L107.4 503.8 L108.2 503.9 L107.2 505.0 L108.5 507.3 L110.1 508.1 L110.5 511.0 L109.6 511.6 L111.4 511.3 L109.7 511.9 L110.3 511.9 L109.4 513.8 L109.9 516.4 L108.9 517.6 L110.7 517.5 L108.9 518.0 L109.3 525.9 L113.7 537.7 L112.7 550.7 L115.1 553.0 L118.0 552.7 L117.2 559.0 L116.2 559.5 L112.3 559.4 L110.7 558.1 L96.1 555.4 L95.1 551.9 L92.8 552.6 L91.0 551.2 L89.0 551.9 L85.8 549.3 L85.5 547.7 L83.0 549.8 L77.8 549.8 L76.4 552.6 L75.0 553.3 L73.0 552.3 L72.3 553.7 L70.4 555.0 L68.7 555.0 L67.4 556.8 L64.2 556.8 L65.1 555.8 L62.8 555.2 L62.4 556.5 L63.9 556.7 L63.2 558.8 L59.7 563.4 L57.0 565.2 L56.9 568.4 L54.5 572.7 L54.1 576.3 L51.1 579.8 L49.8 585.6 L47.5 588.4 L43.7 598.3 L40.5 602.4 L36.5 605.1 L33.5 606.0 L31.1 605.5 L31.3 607.8 L38.0 613.2 L39.9 618.8 L39.1 620.5 L35.2 622.3 L34.1 626.9 L31.2 632.1 L33.2 635.2 L40.1 639.5 L40.2 642.3 L38.9 643.4 L41.9 647.4 L41.4 648.8 L42.5 649.7 L43.4 649.1 L44.2 651.0 L46.5 651.9 L52.7 649.3 L55.8 649.0 L58.8 652.4 L60.2 652.3 L64.5 654.8 L63.8 656.3 L66.6 661.5 L64.9 665.5 L62.4 667.4 L59.8 668.0 L59.2 671.4 L57.2 672.6 L55.7 676.1 L52.7 678.5 L51.9 684.2 L50.7 685.0 L47.8 693.2 L44.4 696.1 L44.2 697.4 L45.0 700.7 L43.9 704.0 L46.6 708.4 L44.4 711.8 L46.1 714.1 L48.3 721.2 L47.5 722.9 L48.6 724.5 L48.1 726.6 L49.6 735.0 L48.7 737.2 L52.6 739.4 L53.9 742.4 L53.5 745.2 L55.0 746.3 L53.6 751.7 L54.1 753.8 L51.4 760.0 L51.7 764.6 L42.6 772.8 L37.5 775.2 L35.5 777.6 L35.8 779.4 L34.9 780.1 L17.5 785.4 L15.9 784.6 L14.0 786.4Z"/><g id="sgs"><path class="sg" d="M58.7 432.9 L78.4 424.5 L83.2 408.8 L89.1 403.3 L95.6 400.8 L100.5 400.8 L110.7 404.7 L113.9 407.4 L118.4 414.6 L133.3 409.8 L137.1 401.6 L131.3 390.0 L129.5 379.9 L131.2 376.3 L140.1 377.1" pathLength="1"/><path class="sg" d="M140.1 377.1 L141.1 375.8 L139.0 373.6 L133.0 372.9 L138.5 367.7 L145.5 371.0 L146.6 369.2 L148.6 370.0 L149.6 367.4 L152.0 368.3 L152.4 367.2 L158.8 369.8 L158.9 366.5 L162.9 358.3 L162.3 354.3 L150.4 336.8" pathLength="1"/><path class="sg" d="M150.4 336.8 L139.8 324.0 L139.1 324.6 L140.7 326.8 L139.4 330.5 L133.7 333.6 L131.6 337.3 L120.8 344.8 L110.5 337.6 L111.1 330.0 L113.7 326.5 L116.7 317.7 L114.2 310.5 L115.0 305.0 L122.0 296.2 L127.1 296.1 L129.7 299.3 L133.6 288.9 L132.6 279.1 L127.7 274.2 L125.7 268.9" pathLength="1"/><path class="sg" d="M125.7 268.9 L124.9 267.9 L124.1 268.7 L122.4 266.5 L120.8 267.3 L118.6 265.0 L117.2 257.8 L117.5 246.4 L109.6 239.3 L104.6 236.7 L105.5 234.2 L91.5 152.3" pathLength="1"/><path class="sg" d="M92.7 152.0 L93.1 152.8 L101.0 149.5 L101.5 150.6 L103.9 150.1 L103.7 148.9 L116.4 145.7 L118.5 139.2 L123.9 131.6 L123.5 127.2 L125.4 121.6 L128.1 121.0 L129.8 118.2 L133.0 118.6 L132.6 121.7 L136.2 122.0 L136.5 120.5 L146.6 125.6" pathLength="1"/><path class="sg" d="M146.6 125.6 L157.2 129.2 L171.1 130.3 L171.4 132.7 L185.3 134.0 L185.5 131.9 L191.9 130.1 L195.3 131.5 L198.8 125.2 L199.4 117.9 L203.1 113.3 L205.6 114.7 L208.7 113.9 L215.4 119.0 L218.1 119.0 L219.4 115.3 L225.4 117.6 L251.0 115.8 L251.7 118.3 L256.7 116.7 L279.3 96.3 L284.2 98.0 L296.2 107.0 L297.3 106.7" pathLength="1"/><path class="sg" d="M297.3 106.7 L296.2 107.0 L294.6 104.8 L294.4 102.7 L302.9 101.9 L304.7 98.0 L302.3 97.3 L302.2 95.3 L306.7 90.2 L308.5 89.8 L309.6 87.3 L309.7 78.0 L307.8 74.9 L308.5 72.9 L307.1 69.7 L308.4 64.7 L310.4 63.5 L308.9 57.4 L311.3 56.0 L309.9 50.9 L310.1 49.2 L311.4 49.0" pathLength="1"/><path class="sg" d="M311.4 49.0 L310.1 49.2 L309.9 50.9 L311.3 56.0 L308.9 57.4 L310.4 63.5 L308.4 64.7 L307.1 69.7 L308.5 72.9 L307.8 74.9 L309.7 78.0 L309.9 83.4 L312.4 87.3 L313.4 86.1 L315.9 86.3 L316.7 84.0 L319.1 82.7 L322.6 87.5 L332.2 89.1 L338.8 106.7 L344.7 113.6" pathLength="1"/><path class="sg" d="M344.7 113.6 L351.5 122.3 L352.1 131.3 L356.4 131.7 L365.9 135.3 L365.6 136.4 L364.1 136.1 L363.5 144.9 L364.6 147.3 L365.1 167.3 L373.3 168.7 L373.6 170.4 L381.9 172.3 L384.1 171.3" pathLength="1"/><path class="sg" d="M384.1 171.3 L380.8 187.7 L378.1 187.9 L376.6 189.4 L370.6 189.6 L369.9 190.8 L371.1 193.3 L369.2 195.0 L367.4 194.7 L363.2 196.7 L357.5 196.4 L352.6 198.8 L348.2 199.3 L345.7 204.1 L345.5 208.0 L346.7 210.3 L346.1 216.3 L344.7 220.0 L342.6 220.5 L341.6 225.9 L344.4 227.6 L344.6 231.1 L339.4 245.1 L335.0 252.0 L331.7 251.6 L328.8 255.0 L325.3 263.8 L321.2 265.6 L322.3 268.3 L319.1 279.4 L311.0 292.4 L310.5 293.4 L313.7 293.9 L307.8 302.5 L307.6 304.5" pathLength="1"/><path class="sg" d="M307.6 304.5 L307.8 302.5 L302.6 304.1 L297.6 302.6 L297.1 306.1 L294.3 308.9 L288.7 309.5 L283.1 313.2 L277.3 324.0 L287.0 329.1 L285.9 343.1 L286.9 344.8 L283.6 365.9 L284.2 376.9 L286.5 392.4 L289.5 398.8 L288.1 401.7 L293.9 406.6" pathLength="1"/><path class="sg" d="M293.9 406.6 L294.6 407.7 L299.7 407.9 L300.6 409.3 L299.8 411.0 L306.2 414.3 L306.0 415.1 L304.9 417.3 L299.1 421.1 L291.9 432.6 L291.8 434.8 L289.8 434.5 L287.5 438.8 L283.7 442.5 L281.5 450.2 L275.2 451.5 L277.0 461.1 L274.5 468.0 L267.9 468.7 L267.4 471.1 L264.8 474.0 L264.3 480.0 L255.5 490.6 L251.2 500.4 L253.6 515.0 L249.5 516.2 L241.4 527.0" pathLength="1"/><path class="sg" d="M241.4 527.0 L240.5 526.6 L215.4 566.7 L204.4 590.6 L200.5 589.9" pathLength="1"/><path class="sg" d="M200.5 589.9 L203.9 592.0 L199.5 604.8 L194.9 627.7 L192.4 626.7 L191.2 633.5 L187.9 635.6 L189.4 636.7 L183.5 642.2 L181.9 645.8 L176.4 649.8 L164.3 668.7 L161.6 669.6 L158.4 673.2 L156.0 673.3 L153.9 679.6 L152.6 679.2 L150.9 689.9 L148.4 694.3 L142.5 695.8 L142.2 697.2 L144.8 701.0 L145.9 708.1 L144.1 714.6 L140.0 719.0 L137.8 724.8 L136.4 736.2 L140.3 739.9 L144.7 752.7 L149.2 759.6 L149.0 760.7 L146.5 760.2" pathLength="1"/><path class="sg" d="M146.5 760.2 L149.0 760.7 L148.7 762.7 L142.3 763.9 L142.8 777.5 L141.0 787.7 L146.8 800.6 L151.5 806.2 L146.9 822.3 L139.0 818.4 L135.4 818.0 L124.6 820.9 L120.5 823.1 L121.7 824.5 L114.3 829.1 L113.4 834.2" pathLength="1"/><path class="sg" d="M113.4 834.2 L109.6 837.8 L99.1 832.2 L91.7 821.8 L93.5 810.2 L96.9 804.7 L102.7 801.0 L108.9 805.3 L112.3 803.2 L114.0 803.4 L113.9 800.4 L110.9 799.3 L112.5 796.0 L111.4 793.9 L103.4 787.0 L100.8 786.5 L99.7 781.6 L94.9 776.7 L93.2 775.9 L89.5 777.6 L82.0 768.1 L73.8 763.6 L72.0 756.9 L65.6 755.0 L65.2 753.2 L59.3 754.1 L56.8 749.3 L55.2 748.9 L56.4 741.4 L55.0 739.2 L50.9 737.0 L49.0 730.1 L49.3 723.1 L46.0 711.3 L47.0 708.2 L45.5 702.2 L47.0 694.9 L52.3 684.3 L53.3 679.2 L59.2 672.5 L60.1 668.6 L66.7 665.2 L70.1 657.4 L67.2 654.4 L68.0 650.9 L66.8 644.9 L60.8 642.2 L62.2 634.4 L50.6 632.6" pathLength="1"/><path class="sg" d="M50.6 632.6 L62.2 634.4 L60.8 642.2 L66.5 644.6 L68.3 650.2 L76.0 636.7 L76.5 628.5 L81.5 629.9 L97.2 621.0 L99.1 622.5 L105.0 623.4 L117.7 630.5 L123.7 631.4 L127.2 629.6 L128.9 625.8 L127.9 622.4 L116.7 616.2 L111.2 611.0 L110.9 606.5 L113.5 603.2 L111.2 603.3 L107.2 591.4 L105.0 592.1 L103.2 590.2 L102.2 591.6 L94.6 587.4 L89.5 587.4 L90.9 583.2" pathLength="1"/><path class="sg" d="M90.9 583.2 L89.5 587.4 L92.1 587.9 L107.0 583.4 L120.8 558.5 L121.9 552.6 L114.8 545.8 L114.7 537.0 L110.8 526.1 L111.0 521.6" pathLength="1"/><path class="sg" d="M111.0 521.6 L111.4 511.0 L107.7 499.4 L107.3 492.1 L101.6 486.6 L94.4 484.0 L93.1 481.4 L89.1 479.3 L84.9 484.7 L82.3 482.5 L80.7 478.2 L81.6 475.1 L77.4 473.2 L78.0 472.3 L76.2 469.6 L67.7 460.1 L68.8 456.7 L67.5 454.7 L68.2 453.5 L66.7 452.7 L67.5 451.5 L62.2 447.9 L63.1 446.4 L58.7 443.0 L56.2 433.9 L58.7 432.9" pathLength="1"/></g><path class="sg sg--on" id="sgOn" d="M58.7 432.9 L78.4 424.5 L83.2 408.8 L89.1 403.3 L95.6 400.8 L100.5 400.8 L110.7 404.7 L113.9 407.4 L118.4 414.6 L133.3 409.8 L137.1 401.6 L131.3 390.0 L129.5 379.9 L131.2 376.3 L140.1 377.1" pathLength="1"/><g><circle class="pt" cx="58.8" cy="433.2" r="3"/><circle class="pt" cx="140.1" cy="377.5" r="3"/><circle class="pt" cx="150.6" cy="337.1" r="3"/><circle class="pt" cx="126.5" cy="268.2" r="3"/><circle class="pt" cx="91.5" cy="152.3" r="3"/><circle class="pt" cx="147.1" cy="124.4" r="3"/><circle class="pt" cx="297.3" cy="107.1" r="3"/><circle class="pt" cx="311.3" cy="48.5" r="3"/><circle class="pt" cx="345.9" cy="113.0" r="3"/><circle class="pt" cx="384.6" cy="171.5" r="3"/><circle class="pt" cx="308.8" cy="304.6" r="3"/><circle class="pt" cx="293.4" cy="407.1" r="3"/><circle class="pt" cx="242.2" cy="527.6" r="3"/><circle class="pt" cx="200.3" cy="590.4" r="3"/><circle class="pt" cx="146.5" cy="759.9" r="3"/><circle class="pt" cx="113.4" cy="834.1" r="3"/><circle class="pt" cx="50.5" cy="632.9" r="3"/><circle class="pt" cx="90.4" cy="582.9" r="3"/><circle class="pt" cx="111.2" cy="521.7" r="3"/></g><circle class="pt pt--a" id="ptA" r="6" cx="58.8" cy="433.2"/><circle class="pt pt--b" id="ptB" r="6" cx="140.1" cy="377.5"/><g class="lg" transform="translate(58.8 433.2)"><circle r="9"/><text x="16" y="5">largada e chegada</text></g><g id="hits"><path class="hit" data-i="0" d="M58.7 432.9 L78.4 424.5 L83.2 408.8 L89.1 403.3 L95.6 400.8 L100.5 400.8 L110.7 404.7 L113.9 407.4 L118.4 414.6 L133.3 409.8 L137.1 401.6 L131.3 390.0 L129.5 379.9 L131.2 376.3 L140.1 377.1"/><path class="hit" data-i="1" d="M140.1 377.1 L141.1 375.8 L139.0 373.6 L133.0 372.9 L138.5 367.7 L145.5 371.0 L146.6 369.2 L148.6 370.0 L149.6 367.4 L152.0 368.3 L152.4 367.2 L158.8 369.8 L158.9 366.5 L162.9 358.3 L162.3 354.3 L150.4 336.8"/><path class="hit" data-i="2" d="M150.4 336.8 L139.8 324.0 L139.1 324.6 L140.7 326.8 L139.4 330.5 L133.7 333.6 L131.6 337.3 L120.8 344.8 L110.5 337.6 L111.1 330.0 L113.7 326.5 L116.7 317.7 L114.2 310.5 L115.0 305.0 L122.0 296.2 L127.1 296.1 L129.7 299.3 L133.6 288.9 L132.6 279.1 L127.7 274.2 L125.7 268.9"/><path class="hit" data-i="3" d="M125.7 268.9 L124.9 267.9 L124.1 268.7 L122.4 266.5 L120.8 267.3 L118.6 265.0 L117.2 257.8 L117.5 246.4 L109.6 239.3 L104.6 236.7 L105.5 234.2 L91.5 152.3"/><path class="hit" data-i="4" d="M92.7 152.0 L93.1 152.8 L101.0 149.5 L101.5 150.6 L103.9 150.1 L103.7 148.9 L116.4 145.7 L118.5 139.2 L123.9 131.6 L123.5 127.2 L125.4 121.6 L128.1 121.0 L129.8 118.2 L133.0 118.6 L132.6 121.7 L136.2 122.0 L136.5 120.5 L146.6 125.6"/><path class="hit" data-i="5" d="M146.6 125.6 L157.2 129.2 L171.1 130.3 L171.4 132.7 L185.3 134.0 L185.5 131.9 L191.9 130.1 L195.3 131.5 L198.8 125.2 L199.4 117.9 L203.1 113.3 L205.6 114.7 L208.7 113.9 L215.4 119.0 L218.1 119.0 L219.4 115.3 L225.4 117.6 L251.0 115.8 L251.7 118.3 L256.7 116.7 L279.3 96.3 L284.2 98.0 L296.2 107.0 L297.3 106.7"/><path class="hit" data-i="6" d="M297.3 106.7 L296.2 107.0 L294.6 104.8 L294.4 102.7 L302.9 101.9 L304.7 98.0 L302.3 97.3 L302.2 95.3 L306.7 90.2 L308.5 89.8 L309.6 87.3 L309.7 78.0 L307.8 74.9 L308.5 72.9 L307.1 69.7 L308.4 64.7 L310.4 63.5 L308.9 57.4 L311.3 56.0 L309.9 50.9 L310.1 49.2 L311.4 49.0"/><path class="hit" data-i="7" d="M311.4 49.0 L310.1 49.2 L309.9 50.9 L311.3 56.0 L308.9 57.4 L310.4 63.5 L308.4 64.7 L307.1 69.7 L308.5 72.9 L307.8 74.9 L309.7 78.0 L309.9 83.4 L312.4 87.3 L313.4 86.1 L315.9 86.3 L316.7 84.0 L319.1 82.7 L322.6 87.5 L332.2 89.1 L338.8 106.7 L344.7 113.6"/><path class="hit" data-i="8" d="M344.7 113.6 L351.5 122.3 L352.1 131.3 L356.4 131.7 L365.9 135.3 L365.6 136.4 L364.1 136.1 L363.5 144.9 L364.6 147.3 L365.1 167.3 L373.3 168.7 L373.6 170.4 L381.9 172.3 L384.1 171.3"/><path class="hit" data-i="9" d="M384.1 171.3 L380.8 187.7 L378.1 187.9 L376.6 189.4 L370.6 189.6 L369.9 190.8 L371.1 193.3 L369.2 195.0 L367.4 194.7 L363.2 196.7 L357.5 196.4 L352.6 198.8 L348.2 199.3 L345.7 204.1 L345.5 208.0 L346.7 210.3 L346.1 216.3 L344.7 220.0 L342.6 220.5 L341.6 225.9 L344.4 227.6 L344.6 231.1 L339.4 245.1 L335.0 252.0 L331.7 251.6 L328.8 255.0 L325.3 263.8 L321.2 265.6 L322.3 268.3 L319.1 279.4 L311.0 292.4 L310.5 293.4 L313.7 293.9 L307.8 302.5 L307.6 304.5"/><path class="hit" data-i="10" d="M307.6 304.5 L307.8 302.5 L302.6 304.1 L297.6 302.6 L297.1 306.1 L294.3 308.9 L288.7 309.5 L283.1 313.2 L277.3 324.0 L287.0 329.1 L285.9 343.1 L286.9 344.8 L283.6 365.9 L284.2 376.9 L286.5 392.4 L289.5 398.8 L288.1 401.7 L293.9 406.6"/><path class="hit" data-i="11" d="M293.9 406.6 L294.6 407.7 L299.7 407.9 L300.6 409.3 L299.8 411.0 L306.2 414.3 L306.0 415.1 L304.9 417.3 L299.1 421.1 L291.9 432.6 L291.8 434.8 L289.8 434.5 L287.5 438.8 L283.7 442.5 L281.5 450.2 L275.2 451.5 L277.0 461.1 L274.5 468.0 L267.9 468.7 L267.4 471.1 L264.8 474.0 L264.3 480.0 L255.5 490.6 L251.2 500.4 L253.6 515.0 L249.5 516.2 L241.4 527.0"/><path class="hit" data-i="12" d="M241.4 527.0 L240.5 526.6 L215.4 566.7 L204.4 590.6 L200.5 589.9"/><path class="hit" data-i="13" d="M200.5 589.9 L203.9 592.0 L199.5 604.8 L194.9 627.7 L192.4 626.7 L191.2 633.5 L187.9 635.6 L189.4 636.7 L183.5 642.2 L181.9 645.8 L176.4 649.8 L164.3 668.7 L161.6 669.6 L158.4 673.2 L156.0 673.3 L153.9 679.6 L152.6 679.2 L150.9 689.9 L148.4 694.3 L142.5 695.8 L142.2 697.2 L144.8 701.0 L145.9 708.1 L144.1 714.6 L140.0 719.0 L137.8 724.8 L136.4 736.2 L140.3 739.9 L144.7 752.7 L149.2 759.6 L149.0 760.7 L146.5 760.2"/><path class="hit" data-i="14" d="M146.5 760.2 L149.0 760.7 L148.7 762.7 L142.3 763.9 L142.8 777.5 L141.0 787.7 L146.8 800.6 L151.5 806.2 L146.9 822.3 L139.0 818.4 L135.4 818.0 L124.6 820.9 L120.5 823.1 L121.7 824.5 L114.3 829.1 L113.4 834.2"/><path class="hit" data-i="15" d="M113.4 834.2 L109.6 837.8 L99.1 832.2 L91.7 821.8 L93.5 810.2 L96.9 804.7 L102.7 801.0 L108.9 805.3 L112.3 803.2 L114.0 803.4 L113.9 800.4 L110.9 799.3 L112.5 796.0 L111.4 793.9 L103.4 787.0 L100.8 786.5 L99.7 781.6 L94.9 776.7 L93.2 775.9 L89.5 777.6 L82.0 768.1 L73.8 763.6 L72.0 756.9 L65.6 755.0 L65.2 753.2 L59.3 754.1 L56.8 749.3 L55.2 748.9 L56.4 741.4 L55.0 739.2 L50.9 737.0 L49.0 730.1 L49.3 723.1 L46.0 711.3 L47.0 708.2 L45.5 702.2 L47.0 694.9 L52.3 684.3 L53.3 679.2 L59.2 672.5 L60.1 668.6 L66.7 665.2 L70.1 657.4 L67.2 654.4 L68.0 650.9 L66.8 644.9 L60.8 642.2 L62.2 634.4 L50.6 632.6"/><path class="hit" data-i="16" d="M50.6 632.6 L62.2 634.4 L60.8 642.2 L66.5 644.6 L68.3 650.2 L76.0 636.7 L76.5 628.5 L81.5 629.9 L97.2 621.0 L99.1 622.5 L105.0 623.4 L117.7 630.5 L123.7 631.4 L127.2 629.6 L128.9 625.8 L127.9 622.4 L116.7 616.2 L111.2 611.0 L110.9 606.5 L113.5 603.2 L111.2 603.3 L107.2 591.4 L105.0 592.1 L103.2 590.2 L102.2 591.6 L94.6 587.4 L89.5 587.4 L90.9 583.2"/><path class="hit" data-i="17" d="M90.9 583.2 L89.5 587.4 L92.1 587.9 L107.0 583.4 L120.8 558.5 L121.9 552.6 L114.8 545.8 L114.7 537.0 L110.8 526.1 L111.0 521.6"/><path class="hit" data-i="18" d="M111.0 521.6 L111.4 511.0 L107.7 499.4 L107.3 492.1 L101.6 486.6 L94.4 484.0 L93.1 481.4 L89.1 479.3 L84.9 484.7 L82.3 482.5 L80.7 478.2 L81.6 475.1 L77.4 473.2 L78.0 472.3 L76.2 469.6 L67.7 460.1 L68.8 456.7 L67.5 454.7 L68.2 453.5 L66.7 452.7 L67.5 451.5 L62.2 447.9 L63.1 446.4 L58.7 443.0 L56.2 433.9 L58.7 432.9"/></g></svg></div>
+  <div class="bx" id="bx" aria-hidden="true">
+    <div class="bars" id="bars"></div>
+    <div class="nums" id="nums"></div>
+    <div class="ico" id="ico"></div>
+  </div>
+  <div class="tr__lg" id="lg" aria-hidden="true"><button type="button" data-k="a"><svg><use href="#i-a"/></svg>asfalto</button><button type="button" data-k="c"><svg><use href="#i-c"/></svg>calçamento</button><button type="button" data-k="p"><svg><use href="#i-p"/></svg>praia</button><button type="button" data-k="t"><svg><use href="#i-t"/></svg>trilha</button><button type="button" data-k="f"><svg><use href="#i-f"/></svg>areia fofa</button><button type="button" data-k="d"><svg><use href="#i-d"/></svg>dunas</button><button type="button" data-k="e"><svg><use href="#i-e"/></svg>estrada de terra</button></div>
+  <div class="tp" id="tp" aria-hidden="true">
+    <div class="tp__n" id="tpN">01</div>
+    <div class="tp__m">
+      <p class="tp__r" id="tpR"></p>
+      <dl class="tp__f">
+        <div><dt class="k">distância</dt><dd id="tpK"></dd></div>
+        <div><dt class="k">terreno</dt><dd class="tp__t" id="tpT"></dd></div>
+        <div><dt class="k">km da volta</dt><dd id="tpA"></dd></div>
+      </dl>
+      <p class="tp__x" id="tpX"></p>
+    </div>
+  </div>
+  <ol class="sr" id="tl"></ol>
+</section>
+
+<section class="reel wrap" aria-label="Time Piranhas na trilha">
+  <div class="reel__row">
+    <div class="ph"><img src="img/trilha-agua.jpg" alt="Atletas do Time Piranhas correndo por uma poça na trilha" loading="lazy"></div>
+    <div class="ph"><img src="img/trilha-solo.jpg" alt="Atleta do Time Piranhas em trilha de terra" loading="lazy"></div>
+    <div class="ph"><img src="img/amanhecer.jpg" alt="Grupo do Time Piranhas correndo ao amanhecer" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="casa wrap" aria-labelledby="casa-t">
+  <div class="casa__hd">
+    <div><h2 id="casa-t">Mansão Piranhas</h2><p class="casa__d">dos dias 15 a 18/4 <i>(3 noites)</i></p></div>
+    <dl class="casa__f">
+      <div><dt class="k">quartos</dt><dd>5, todos com ar</dd></div>
+      <div><dt class="k">camas</dt><dd>7, até 10 pessoas</dd></div>
+      <div><dt class="k">banheiros</dt><dd>2</dd></div>
+    </dl>
+  </div>
+  <div class="casa__g">
+    <figure><img src="img/casa/c1.jpg" alt="Casa de três andares com gramado e prainha na beira da Lagoa da Conceição" loading="lazy"></figure>
+    <figure><img src="img/casa/c4.jpg" alt="Varanda com vista para a lagoa" loading="lazy"></figure>
+    <figure><img src="img/casa/c5.jpg" alt="Sala de jogos com mesa de sinuca e vista para a lagoa" loading="lazy"></figure>
+    <figure><img src="img/casa/c3.jpg" alt="Mesa de café da manhã no deck de frente para a lagoa" loading="lazy"></figure>
+    <figure><img src="img/casa/c6.jpg" alt="Quarto de casal com janela para a lagoa" loading="lazy"></figure>
+  </div>
+  <ul class="amen"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15h18M5 15v5M19 15v5M12 15v5M4 11h16"/><path d="M2 8c2-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0 3.5 1.5 5 0"/></svg><span>deck na lagoa</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="6" r="2.6"/><path d="M2 14c2.5-2 4.5-2 7 0s4.5 2 7 0 4-2 6 0"/><path d="M2 19h20"/><path d="M7 14V5l-4 3M7 5l4 3"/></svg><span>prainha particular</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9c2.5-2 4.5-2 7 0s4.5 2 7 0 4-2 6 0M2 14c2.5-2 4.5-2 7 0s4.5 2 7 0 4-2 6 0M2 19c2.5-2 4.5-2 7 0s4.5 2 7 0 4-2 6 0"/></svg><span>Lagoa da Conceição</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h16a8 8 0 0 1-16 0z"/><path d="M8 17l-2 5M16 17l2 5M9 2c-1 1.5 1 2.5 0 4M13 2c-1 1.5 1 2.5 0 4"/></svg><span>churrasqueira</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="1.5"/><circle cx="9" cy="12" r="1.4"/><circle cx="13" cy="11" r="1.4"/><path d="M6 17v4M18 17v4"/></svg><span>sinuca e pingue-pongue</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="8" rx="1.5"/><path d="M6 9h12M7 15c0 2-1.5 2-1.5 4M12 15v4M17 15c0 2 1.5 2 1.5 4"/></svg><span>ar em todos os quartos</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1.2"/></svg><span>Wi-Fi de 240 Mbps</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v8a2 2 0 0 0 2 2v8M5 3v5M9 3v5M7 3v5"/><path d="M17 3c-2 2-2.5 5-2.5 8H18v10"/></svg><span>cozinha completa</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16v-4l2-5h14l2 5v4z"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="16.5" cy="16.5" r="1.8"/><path d="M3 12h18"/></svg><span>vaga para 3 carros</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M8 6h.01M11 6h.01"/></svg><span>máquina de lavar</span></li></ul>
+  <p class="casa__x">Casa de 3 andares na beira da Lagoa da Conceição. 1,6 km do centrinho da Lagoa e 6 km da Joaquina, trecho 12 da prova. Em cotação, ainda não reservada. <a href="https://www.airbnb.com.br/rooms/30738913" target="_blank" rel="noopener">Ver no Airbnb</a></p>
+</section>
+
+<section class="cam wrap" aria-labelledby="cam-t">
+  <div class="cam__in">
+    <div>
+      <span class="cam__tag">em breve</span>
+      <h2 id="cam-t">Camiseta oficial<br><i>da Volta à Ilha</i></h2>
+      <p>O Time Piranhas vai correr a volta com camiseta própria da prova. A arte ainda está sendo feita. São 2 camisetas por atleta e elas já entram no valor. Modelo e tamanho você escolhe no formulário.</p>
+    </div>
+    <div class="cam__tees" role="img" aria-label="Rascunho da camiseta, frente e costas, com a arte ainda por vir">
+      <figure class="tee"><svg viewBox="0 0 300 300" aria-hidden="true"><path class="tee__b" d="M70 18 L104 8 C112 24 136 30 150 30 C164 30 188 24 196 8 L230 18 L292 58 L264 112 L232 96 L232 292 L68 292 L68 96 L36 112 L8 58 Z"/><path class="tee__n" d="M104 8 C112 24 136 30 150 30 C164 30 188 24 196 8 C186 40 170 48 150 48 C130 48 114 40 104 8 Z"/><image href="assets/img/logo/piranha-mark.png" x="172" y="78" width="34" height="34" opacity=".28"/><rect class="tee__ph" x="104" y="130" width="92" height="92" rx="2"/><text class="tee__q" x="150" y="186">?</text></svg><figcaption class="k">frente</figcaption></figure>
+      <figure class="tee"><svg viewBox="0 0 300 300" aria-hidden="true"><path class="tee__b" d="M70 18 L104 8 C112 24 136 30 150 30 C164 30 188 24 196 8 L230 18 L292 58 L264 112 L232 96 L232 292 L68 292 L68 96 L36 112 L8 58 Z"/><path class="tee__l" d="M104 8 C112 18 136 22 150 22 C164 22 188 18 196 8"/><text class="tee__t" x="150" y="120">TIME</text><text class="tee__t" x="150" y="158">PIRANHAS</text><text class="tee__s" x="150" y="196">VOLTA À ILHA · 2027</text></svg><figcaption class="k">costas</figcaption></figure>
+      <span class="cam__soon" aria-hidden="true">em breve</span>
+    </div>
+  </div>
+</section>
+
+<section class="a4sec">
+  <div class="desk wrap">
+    <article class="a4" id="a4">
+      <div class="a4__hd">
+        <h3>Volta à Ilha<small>Time Piranhas · edição 2027</small></h3>
+        <img src="assets/img/logo/piranha-mark.png" alt="">
+      </div>
+      <p><mark>Sábado 17.04.2027</mark> · Av. Beira-Mar Norte, Florianópolis</p>
+
+      <h4>Viagem</h4>
+      <ul>
+        <li><b>qui 15.04</b><span>chegada e entrada na casa</span></li>
+        <li><b>sex 16.04</b><span>congresso técnico e kit, horário a confirmar</span></li>
+        <li><b>sáb 17.04</b><span>prova, largada de madrugada e chegada até 20h30</span></li>
+        <li><b>dom 18.04</b><span>volta a partir de 12h</span></li>
+      </ul>
+
+      <h4>Pagamento</h4>
+      <ul class="rules">
+        <li><b>1</b><span><mark>Entrada de R$ 890 no pix</mark> garante seu lugar no Time Piranhas.</span></li>
+        <li><b>2</b><span>O restante é pago em <mark>3 vezes de R$ 500</mark> no pix. Quem preferir pode passar no cartão de crédito, com os juros do cartão por conta do atleta.</span></li>
+        <li><b>3</b><span>Se o Time Piranhas não conseguir vaga na prova, a entrada volta inteira.</span></li>
+        <li><b>4</b><span>O valor é uma estimativa aproximada. Se o valor final ficar acima e não fechar pra você, avisa em até 7 dias do aviso e a entrada volta inteira.</span></li>
+        <li><b>5</b><span>Com as vagas fechadas, você entra na reserva sem pagar nada. Se abrir vaga, a gente chama pela ordem da reserva.</span></li>
+      </ul>
+
+      <h4>Corrida</h4>
+      <p>Todo atleta corre pelo menos 1 trecho. Os trechos a mais, 1 ou 2, são combinados de acordo com a estratégia do time e as melhores performances.</p>
+
+      <h4>Valor total</h4>
+      <ul class="inc">
+        <li><span class="yes">✓</span><span>inscrição na prova</span></li>
+        <li><span class="no">✕</span><span>aéreo, cada um escolhe o dia</span></li>
+        <li><span class="yes">✓</span><span>hospedagem</span></li>
+        <li><span class="no">✕</span><span>alimentação</span></li>
+        <li><span class="yes">✓</span><span>2 SUVs à disposição do time, de quinta a domingo, com conforto para todos</span></li>
+        <li><span class="yes">✓</span><span>2 camisetas oficiais do Time Piranhas na Volta à Ilha</span></li>
+      </ul>
+
+      <h4>Estimativa aproximada por atleta</h4>
+      <ul class="px">
+        <li><span>Casa da Lagoa, 3 noites (R$ 10.865 no total)</span><b>R$ 1.360</b></li>
+        <li><span>2 SUVs, qui a dom, com combustível</span><b>R$ 270</b></li>
+        <li><span>Inscrição na prova</span><b>R$ 500</b></li>
+        <li><span>2 camisetas oficiais por atleta</span><b>R$ 260</b></li>
+        <li><span>Total</span><b>R$ 2.390</b></li>
+        <li><span>Entrada no pix, garante o lugar</span><b><mark>R$ 890</mark></b></li>
+        <li><span>Restante em 3 vezes</span><b>R$ 500</b></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="ins" id="inscricao">
+  <div class="wrap">
+    <div class="ins__hd">
+      <h2>Garanta seu lugar</h2>
+      <div class="lot" aria-live="polite">
+        <div class="lot__d" id="lotD" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <p class="k"><span id="lotT">O total são 9 pessoas, 5 vagas restantes</span></p>
+      </div>
+    </div>
+
+    <div class="plan">
+      <div class="plan__tot">
+        <span class="k">valor total por atleta · estimativa aproximada</span>
+        <b>R$ 2.390</b>
+      </div>
+      <ol class="plan__s">
+        <li class="now"><span class="k">agora, no pix</span><b>R$ 890</b><small>entrada, garante o lugar</small></li>
+        <li><span class="k">parcela 2</span><b>R$ 500</b></li>
+        <li><span class="k">parcela 3</span><b>R$ 500</b></li>
+        <li><span class="k">parcela 4</span><b>R$ 500</b></li>
+      </ol>
+      <p class="plan__cc">Prefere cartão de crédito? Dá pra passar no cartão, com os juros do cartão por conta do atleta. <a href="https://wa.me/5531996202657?text=Volta%20%C3%A0%20Ilha%3A%20quero%20pagar%20no%20cart%C3%A3o" target="_blank" rel="noopener">Fala com a gente</a></p>
+    </div>
+
+    <form class="form" id="form" novalidate>
+      <p class="closed" id="closed" hidden>As 5 vagas fecharam. Deixa seu nome na reserva, sem pagar nada agora. Se abrir vaga, a gente chama pela ordem da reserva.</p>
+
+      <fieldset class="st">
+        <legend class="st__h"><span>01</span>Atleta</legend>
+        <div class="grid2">
+          <div class="fld"><label for="nome">Nome completo</label><input type="text" id="nome" maxlength="80" autocomplete="name"></div>
+          <div class="fld"><label for="email">Email</label><input type="email" id="email" maxlength="80" autocomplete="email"></div>
+          <div class="fld"><label for="whats">WhatsApp</label><input type="tel" id="whats" inputmode="tel" placeholder="31 9...." autocomplete="tel"></div>
+          <div class="fld"><label for="pace">PACE em 5 km</label><input type="text" id="pace" maxlength="10" placeholder="5:30" autocomplete="off"></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="st">
+        <legend class="st__h"><span>02</span>Trechos</legend>
+        <div class="grid2">
+          <div class="fld"><label for="tmais">Trecho que você mais quer fazer</label><select id="tmais"><option value="">escolha um trecho</option><option value="1">01 · Av. Beira-Mar Norte → Bairro João Paulo · 7,2 km · asfalto</option><option value="2">02 · Bairro João Paulo → Office Park, SC-401 · 4 km · calçamento e asfalto</option><option value="3">03 · Office Park, SC-401 → Santo Antônio de Lisboa · 8,3 km · asfalto e calçamento</option><option value="4">04 · Santo Antônio de Lisboa → Praia da Daniela · 8 km · calçamento, asfalto e banana boat</option><option value="5">05 · Praia da Daniela → Jurerê Tradicional · 5,1 km · praia e trilha</option><option value="6">06 · Jurerê Tradicional → Cachoeira do Bom Jesus · 5,3 km · praia e asfalto</option><option value="7">07 · Cachoeira do Bom Jesus → Praia Brava · 9,3 km · praia, asfalto e trilha</option><option value="8">08 · Praia Brava → Praia dos Ingleses · 5,2 km · trilha e praia</option><option value="9">09 · Praia dos Ingleses → Praia do Santinho · 4,7 km · praia e asfalto</option><option value="10">10 · Praia do Santinho → Praia do Moçambique · 8,4 km · dunas, terra e asfalto</option><option value="11">11 · Praia do Moçambique → Barra da Lagoa · 5,7 km · areia fofa</option><option value="12">12 · Barra da Lagoa → Praia da Joaquina · 8,1 km · asfalto</option><option value="13">13 · Praia da Joaquina → Novo Campeche · 4,9 km · areia fofa</option><option value="14">14 · Novo Campeche → Praia da Armação · 7,7 km · areia fofa e asfalto</option><option value="15">15 · Praia da Armação → Praia dos Açores · 9,3 km · areia fofa e asfalto</option><option value="16">16 · Praia dos Açores → Tapera · 16,4 km · terra e asfalto, Morro do Sertão</option><option value="17">17 · Tapera → Carianos · 8 km · calçamento e asfalto</option><option value="18">18 · Carianos → Via Expressa Sul · 7,2 km · asfalto</option><option value="19">19 · Via Expressa Sul → Av. Beira-Mar Norte · 6,1 km · asfalto, chegada</option></select></div>
+          <div class="fld"><label for="tmenos">Trecho que você menos quer fazer</label><select id="tmenos"><option value="">escolha um trecho</option><option value="1">01 · Av. Beira-Mar Norte → Bairro João Paulo · 7,2 km · asfalto</option><option value="2">02 · Bairro João Paulo → Office Park, SC-401 · 4 km · calçamento e asfalto</option><option value="3">03 · Office Park, SC-401 → Santo Antônio de Lisboa · 8,3 km · asfalto e calçamento</option><option value="4">04 · Santo Antônio de Lisboa → Praia da Daniela · 8 km · calçamento, asfalto e banana boat</option><option value="5">05 · Praia da Daniela → Jurerê Tradicional · 5,1 km · praia e trilha</option><option value="6">06 · Jurerê Tradicional → Cachoeira do Bom Jesus · 5,3 km · praia e asfalto</option><option value="7">07 · Cachoeira do Bom Jesus → Praia Brava · 9,3 km · praia, asfalto e trilha</option><option value="8">08 · Praia Brava → Praia dos Ingleses · 5,2 km · trilha e praia</option><option value="9">09 · Praia dos Ingleses → Praia do Santinho · 4,7 km · praia e asfalto</option><option value="10">10 · Praia do Santinho → Praia do Moçambique · 8,4 km · dunas, terra e asfalto</option><option value="11">11 · Praia do Moçambique → Barra da Lagoa · 5,7 km · areia fofa</option><option value="12">12 · Barra da Lagoa → Praia da Joaquina · 8,1 km · asfalto</option><option value="13">13 · Praia da Joaquina → Novo Campeche · 4,9 km · areia fofa</option><option value="14">14 · Novo Campeche → Praia da Armação · 7,7 km · areia fofa e asfalto</option><option value="15">15 · Praia da Armação → Praia dos Açores · 9,3 km · areia fofa e asfalto</option><option value="16">16 · Praia dos Açores → Tapera · 16,4 km · terra e asfalto, Morro do Sertão</option><option value="17">17 · Tapera → Carianos · 8 km · calçamento e asfalto</option><option value="18">18 · Carianos → Via Expressa Sul · 7,2 km · asfalto</option><option value="19">19 · Via Expressa Sul → Av. Beira-Mar Norte · 6,1 km · asfalto, chegada</option></select></div>
+        </div>
+        <p class="st__x">Quem define a escala é a comissão de treinadores e logística. A gente tenta respeitar a preferência de todo mundo, mas ninguém escolhe o próprio trecho.</p>
+      </fieldset>
+
+      <fieldset class="st st--car">
+        <legend class="st__h"><span>03</span>Carros</legend>
+        <div class="car">
+          <div class="car__v">
+            <div class="car__g">
+              <figure><img src="img/carro/c1.jpg" alt="SUV prata numa estrada de terra com neblina" loading="lazy"></figure>
+              <figure><img src="img/carro/c4.jpg" alt="SUV prata com lama depois da estrada de terra" loading="lazy"></figure>
+            </div>
+            <p class="k">2 SUVs compactos · tipo Nivus ou Pulse, conforme a locadora</p>
+            <p class="car__cr">Fotos ilustrativas do Time Piranhas no Corre pro Mar.</p>
+          </div>
+          <div class="car__q">
+            <ul class="car__f">
+              <li><b>2</b><span>SUVs à disposição do time, de quinta a domingo</span></li>
+              <li><b>4</b><span>motoristas cadastrados na locadora, 2 por carro</span></li>
+            </ul>
+            <fieldset class="opt"><legend>Tem carteira de motorista?</legend>
+              <label><input type="radio" name="cnh" value="sim"><span>tenho</span></label>
+              <label><input type="radio" name="cnh" value="não"><span>não tenho</span></label>
+            </fieldset>
+            <fieldset class="opt" id="f-mot"><legend>Quer ser um dos 4 motoristas?</legend>
+              <label><input type="radio" name="motorista" value="sim"><span>quero dirigir</span></label>
+              <label><input type="radio" name="motorista" value="não"><span>prefiro não</span></label>
+            </fieldset>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="st st--tee">
+        <legend class="st__h"><span>04</span>Camisetas</legend>
+        <div class="tees">
+        <div class="tees__v"><svg class="mtee" viewBox="0 0 60 56" aria-hidden="true"><path d="M14 4 L22 2 Q30 9 38 2 L46 4 L58 14 L52 24 L46 21 L46 54 L14 54 L14 21 L8 24 L2 14 Z"/></svg><svg class="mtee" viewBox="0 0 60 56" aria-hidden="true"><path d="M14 4 L22 2 Q30 9 38 2 L46 4 L58 14 L52 24 L46 21 L46 54 L14 54 L14 21 L8 24 L2 14 Z"/></svg><p class="st__x st__x--top">São 2 camisetas oficiais, no mesmo modelo e tamanho.</p></div>
+        <div class="grid2">
+          <fieldset class="opt" id="f-mod"><legend>Modelo</legend>
+            <label><input type="radio" name="mod" value="tradicional"><span>tradicional</span></label>
+            <label><input type="radio" name="mod" value="babylook"><span>babylook</span></label>
+          </fieldset>
+          <fieldset class="opt" id="f-tam"><legend>Tamanho</legend>
+            <label><input type="radio" name="tam" value="P"><span>P</span></label>
+            <label><input type="radio" name="tam" value="M"><span>M</span></label>
+            <label><input type="radio" name="tam" value="G"><span>G</span></label>
+            <label><input type="radio" name="tam" value="GG"><span>GG</span></label>
+          </fieldset>
+        </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="st st--pix" id="b-pix">
+        <legend class="st__h"><span>05</span>Entrada no pix</legend>
+        <div class="pix">
+          <div class="pix__qr" id="pix-qr" aria-label="QR code do pix"></div>
+          <div class="pix__m">
+            <b class="pix__v">R$ 890</b>
+            <p class="k">entrada · garante seu lugar</p>
+            <div class="pay__code" id="pix-code"></div>
+            <button type="button" class="cta line" id="pix-copy">copiar pix</button>
+            <p class="pay__key">chave: timepiranhas@gmail.com</p>
+          </div>
+        </div>
+        <div class="grid2 pix__up">
+          <label class="file" id="file-box"><input type="file" id="comprovante" accept="image/*,application/pdf"><span>↑</span><span id="file-txt">comprovante do pix</span></label>
+          <div class="fld"><label for="estorno">Chave pix pra devolução, se precisar</label><input type="text" id="estorno" maxlength="80" autocomplete="off"></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="st st--ok">
+        <legend class="st__h"><span id="okN">06</span>Confirmação</legend>
+        <label class="chk"><input type="checkbox" id="termo"><span>Fiz o pix da entrada de R$ 890. Li e aceito o Termo de Adesão da viagem do Time Piranhas à Volta à Ilha 2027. Sei que o Time Piranhas garante só inscrição, casa, 2 SUVs e 2 camisetas oficiais, e que aéreo, traslado, alimentação e despesas pessoais são por minha conta. Sei que o valor é uma estimativa aproximada de R$ 2.390. Sei que, se desistir fora dos prazos do termo e ninguém assumir minha vaga, perco o que já foi gasto em meu nome. Declaro estar apto(a) para correr, assumo os riscos da prova e aceito a escala de trechos definida pela comissão de treinadores e logística.</span></label>
+        <p class="err" id="err" hidden></p>
+        <button type="submit" class="cta send" id="submit">→ garantir meu lugar</button>
+      </fieldset>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <img class="fish" src="assets/img/logo/piranha-mark.png" alt="Piranhas">
+  <div class="social">
+    <a href="https://wa.me/5531996202657" target="_blank" rel="noopener" aria-label="WhatsApp do Piranhas"><svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.04 21.5h-.01a9.43 9.43 0 0 1-4.8-1.31l-.35-.21-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.98 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.21-4.24 9.43-9.45 9.43zm8.04-17.47A11.3 11.3 0 0 0 12.04.7C5.77.7.67 5.8.67 12.07c0 2 .52 3.96 1.52 5.68L.57 23.65l6.03-1.58a11.33 11.33 0 0 0 5.43 1.38h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.89-3.33-8.04z"/></svg></a>
+    <a href="https://instagram.com/timepiranhas" target="_blank" rel="noopener" aria-label="Instagram @timepiranhas"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 0 0-2.13 1.38A5.86 5.86 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13a5.86 5.86 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.13-1.38 5.86 5.86 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.13A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+/* movimento */
+(function(){
+  var KM = [7.2,4,8.3,8,5.1,5.3,9.3,5.2,4.7,8.4,5.7,8.1,4.9,7.7,9.3,16.4,8,7.2,6.1];
+  var $ = function(id){ return document.getElementById(id); };
+  var max = Math.max.apply(null, KM);
+  $('bars').innerHTML = KM.map(function(k, i){ return '<div class="bar" style="--h:' + (k / max * 100).toFixed(1) + ';--i:' + i + '"></div>'; }).join('');
+  $('nums').innerHTML = KM.map(function(k, i){ return '<span>' + (i + 1) + '</span>'; }).join('');
+
+  var AT = ["a", "ca", "ac", "ca", "pt", "pa", "pat", "tp", "pa", "dea", "f", "a", "f", "fa", "fa", "ea", "ca", "a", "a"], NOME = {"a": "asfalto", "c": "calçamento", "p": "praia", "t": "trilha", "f": "areia fofa", "d": "dunas", "e": "estrada de terra"};
+  var ic = function(k){ return '<svg><use href="#i-' + k + '"/></svg>'; };
+  $('ico').innerHTML = AT.map(function(a){ return '<span>' + a.split('').map(ic).join('') + '</span>'; }).join('');
+  // de, para, terreno, destaque. Fonte: Regulamento 2027, páginas 26 e 28 a 32.
+  var T = [
+    ['Av. Beira-Mar Norte','Bairro João Paulo','asfalto',''],
+    ['Bairro João Paulo','Office Park, SC-401','calçamento e asfalto',''],
+    ['Office Park, SC-401','Santo Antônio de Lisboa','asfalto e calçamento',''],
+    ['Santo Antônio de Lisboa','Praia da Daniela','calçamento e asfalto','travessia de banana boat no km 5,1'],
+    ['Praia da Daniela','Jurerê Tradicional','praia e trilha',''],
+    ['Jurerê Tradicional','Cachoeira do Bom Jesus','praia e asfalto',''],
+    ['Cachoeira do Bom Jesus','Praia Brava','praia, asfalto e trilha',''],
+    ['Praia Brava','Praia dos Ingleses','trilha e praia',''],
+    ['Praia dos Ingleses','Praia do Santinho','praia e asfalto',''],
+    ['Praia do Santinho','Praia do Moçambique','dunas, estrada de terra e asfalto','Dunas do Santinho'],
+    ['Praia do Moçambique','Barra da Lagoa','areia fofa',''],
+    ['Barra da Lagoa','Praia da Joaquina','asfalto',''],
+    ['Praia da Joaquina','Novo Campeche','areia fofa em todo o trecho',''],
+    ['Novo Campeche','Praia da Armação','areia fofa e asfalto',''],
+    ['Praia da Armação','Praia dos Açores','areia fofa e asfalto',''],
+    ['Praia dos Açores','Tapera','estrada de terra e asfalto','Morro do Sertão, o trecho mais longo'],
+    ['Tapera','Carianos','calçamento e asfalto',''],
+    ['Carianos','Via Expressa Sul','asfalto',''],
+    ['Via Expressa Sul','Av. Beira-Mar Norte','asfalto','chegada']
+  ];
+  var fmt = function(v){ return String(Math.round(v * 10) / 10).replace('.', ','); };
+  var ate = 0, FIM = KM.map(function(k){ ate += k; return ate; });
+  $('tl').innerHTML = T.map(function(t, i){ return '<li>Trecho ' + (i + 1) + ': ' + t[0] + ' até ' + t[1] + ', ' + fmt(KM[i]) + ' km, ' + t[2] + (t[3] ? ', ' + t[3] : '') + '.</li>'; }).join('');
+  var barras = [].slice.call($('bars').children), nums = [].slice.call($('nums').children), icos = [].slice.call($('ico').children), sgs = [].slice.call($('sgs').children), PTS = [[58.8, 433.2], [140.1, 377.5], [150.6, 337.1], [126.5, 268.2], [91.5, 152.3], [147.1, 124.4], [297.3, 107.1], [311.3, 48.5], [345.9, 113.0], [384.6, 171.5], [308.8, 304.6], [293.4, 407.1], [242.2, 527.6], [200.3, 590.4], [146.5, 759.9], [113.4, 834.1], [50.5, 632.9], [90.4, 582.9], [111.2, 521.7]], tp = $('tp'), atual = -1;
+  function mostra(i){
+    if (i === atual) return;
+    if (atual >= 0){ barras[atual].classList.remove('on'); nums[atual].classList.remove('on'); icos[atual].classList.remove('on'); }
+    atual = i; barras[i].classList.add('on'); nums[i].classList.add('on'); icos[i].classList.add('on');
+    sgs.forEach(function(g, k){ g.classList.toggle('feito', k < i); });
+    var on = $('sgOn'); on.setAttribute('d', sgs[i].getAttribute('d')); on.classList.remove('go'); void on.getBBox(); on.classList.add('go');
+    var a = PTS[i], b = PTS[(i + 1) % 19];
+    $('ptA').setAttribute('cx', a[0]); $('ptA').setAttribute('cy', a[1]); $('ptB').setAttribute('cx', b[0]); $('ptB').setAttribute('cy', b[1]);
+    var t = T[i];
+    $('tpN').textContent = String(i + 1).padStart(2, '0');
+    $('tpR').innerHTML = t[0] + '<i>→</i>' + t[1];
+    $('tpK').textContent = fmt(KM[i]) + ' km';
+    $('tpT').innerHTML = AT[i].split('').map(function(k){ return '<span class="chip">' + ic(k) + NOME[k] + '</span>'; }).join('');
+    $('tpA').textContent = fmt(i ? FIM[i - 1] : 0) + ' a ' + fmt(FIM[i]);
+    $('tpX').textContent = t[3];
+    tp.classList.remove('sw'); void tp.offsetWidth; tp.classList.add('sw');
+  }
+  mostra(0);
+  var parado = matchMedia('(prefers-reduced-motion: reduce)').matches, ate2 = 0, visivel = false;
+  setInterval(function(){ if (!parado && visivel && Date.now() > ate2) mostra((atual + 1) % 19); }, 1900);
+  new IntersectionObserver(function(es){ visivel = es[0].isIntersecting; if (visivel && !ate2) ate2 = Date.now() + 1400; }, { threshold: .25 }).observe($('bx'));
+  function aponta(e){
+    var r = $('bx').getBoundingClientRect();
+    mostra(Math.max(0, Math.min(18, Math.floor((e.clientX - r.left) / r.width * 19))));
+    ate2 = Date.now() + 7000;
+  }
+  $('bx').addEventListener('pointermove', aponta);
+  $('bx').addEventListener('pointerdown', aponta);
+  [].forEach.call(document.querySelectorAll('#hits .hit'), function(h){
+    var f = function(){ mostra(+h.getAttribute('data-i')); ate2 = Date.now() + 7000; };
+    h.addEventListener('pointerenter', f); h.addEventListener('pointerdown', f);
+  });
+  [].forEach.call(document.querySelectorAll('#lg button'), function(btn){
+    var k = btn.getAttribute('data-k');
+    var liga = function(v){
+      btn.classList.toggle('on', v);
+      AT.forEach(function(a, n){ var x = v && a.indexOf(k) > -1; barras[n].classList.toggle('hi', x); icos[n].classList.toggle('hi', x); sgs[n].classList.toggle('hi', x); });
+      if (v) ate2 = Date.now() + 7000;
+    };
+    btn.addEventListener('pointerenter', function(){ liga(true); }); btn.addEventListener('pointerleave', function(){ liga(false); });
+    btn.addEventListener('focus', function(){ liga(true); }); btn.addEventListener('blur', function(){ liga(false); });
+    btn.addEventListener('click', function(){ liga(!btn.classList.contains('on')); });
+  });
+
+  var nav = $('nav'), lines = [].slice.call(document.querySelectorAll('#say span'));
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -12% 0px' });
+  io.observe($('a4')); io.observe($('bars'));
+
+
+  var tick = false;
+  function frame(){
+    tick = false;
+    nav.classList.toggle('solid', scrollY > 40);
+    lines.forEach(function(l){ l.classList.toggle('on', l.getBoundingClientRect().top < innerHeight * .76); });
+  }
+  addEventListener('scroll', function(){ if (!tick){ tick = true; requestAnimationFrame(frame); } }, { passive: true });
+  addEventListener('resize', frame); frame();
+})();
+
+/* inscrição */
+(function(){
+  // URL do Web App do Apps Script (ver SETUP-voltaailha27.md). Sem ela o envio segue pelo WhatsApp.
+  var SCRIPT_URL = 'COLE_AQUI_A_URL_DO_APPS_SCRIPT';
+  var PIX_KEY = 'timepiranhas@gmail.com', ENTRADA = 890, TOTAL = 9;
+
+  var $ = function(id){ return document.getElementById(id); };
+  var form = $('form');
+  var pedidoId = 'VI27' + Math.random().toString(36).slice(2, 8).toUpperCase();
+  var comprovante = null, espera = false;
+  var conectado = SCRIPT_URL.indexOf('COLE_AQUI') !== 0;
+  var ROTULO = '→ garantir meu lugar';
+
+  function tlv(id, v){ return id + String(v.length).padStart(2, '0') + v; }
+  function crc16(s){ var c = 0xFFFF; for (var i = 0; i < s.length; i++){ c ^= s.charCodeAt(i) << 8; for (var j = 0; j < 8; j++) c = (c & 0x8000) ? ((c << 1) ^ 0x1021) & 0xFFFF : (c << 1) & 0xFFFF; } return c.toString(16).toUpperCase().padStart(4, '0'); }
+  function pixPayload(valor){
+    var p = tlv('00', '01') + tlv('26', tlv('00', 'br.gov.bcb.pix') + tlv('01', PIX_KEY)) + tlv('52', '0000') + tlv('53', '986') +
+      tlv('54', valor.toFixed(2)) + tlv('58', 'BR') + tlv('59', 'TIME PIRANHAS') + tlv('60', 'BELO HORIZONTE') + tlv('62', tlv('05', pedidoId)) + '6304';
+    return p + crc16(p);
+  }
+  var code = pixPayload(ENTRADA);
+  $('pix-code').textContent = code;
+  if (window.qrcode){ var q = qrcode(0, 'M'); q.addData(code); q.make(); $('pix-qr').innerHTML = q.createSvgTag({ cellSize: 4, margin: 0, scalable: true }); }
+
+  function pinta(d){
+    var livres = Math.max(0, Number(d.livres));
+    espera = !livres;
+    $('lotT').textContent = 'O total são 9 pessoas, ' + (livres ? livres + (livres === 1 ? ' vaga restante' : ' vagas restantes') : 'vagas fechadas, só reserva');
+    [].forEach.call($('lotD').children, function(d, k){ d.classList.toggle('on', k < TOTAL - livres); });
+    $('closed').hidden = !espera; $('b-pix').hidden = espera;
+    $('okN').textContent = espera ? '05' : '06';
+    ROTULO = espera ? '→ entrar na reserva' : '→ garantir meu lugar';
+    $('submit').textContent = ROTULO;
+  }
+  if (conectado) fetch(SCRIPT_URL + '?acao=vagas').then(function(r){ return r.json(); }).then(pinta).catch(function(){});
+
+  form.addEventListener('input', function(e){ e.target.removeAttribute('aria-invalid'); });
+
+  $('pix-copy').addEventListener('click', function(){
+    var b = this;
+    (navigator.clipboard ? navigator.clipboard.writeText(code) : Promise.reject()).then(function(){ b.textContent = 'copiado ✓'; })
+      .catch(function(){ var r = document.createRange(); r.selectNodeContents($('pix-code')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); });
+  });
+
+  $('comprovante').addEventListener('change', function(){
+    var file = this.files[0]; comprovante = null; $('file-box').dataset.ok = '';
+    if (!file) return;
+    var done = function(data, type, name){ comprovante = { name: name, type: type, data: data }; $('file-box').dataset.ok = '1'; $('file-txt').textContent = '✓ ' + file.name; };
+    if (file.type === 'application/pdf'){
+      if (file.size > 3 * 1024 * 1024){ $('file-txt').textContent = 'pdf grande demais (máx. 3 MB). manda um print.'; return; }
+      var fr = new FileReader(); fr.onload = function(){ done(fr.result.split(',')[1], 'application/pdf', pedidoId + '.pdf'); }; fr.readAsDataURL(file);
+    } else {
+      var img = new Image(), url = URL.createObjectURL(file);
+      img.onload = function(){ var s = Math.min(1, 1600 / Math.max(img.width, img.height)); var c = document.createElement('canvas'); c.width = img.width * s; c.height = img.height * s; c.getContext('2d').drawImage(img, 0, 0, c.width, c.height); done(c.toDataURL('image/jpeg', .8).split(',')[1], 'image/jpeg', pedidoId + '.jpg'); URL.revokeObjectURL(url); };
+      img.onerror = function(){ $('file-txt').textContent = 'não deu pra ler esse arquivo. manda um print.'; };
+      img.src = url;
+    }
+  });
+
+  function erro(msg, el){ $('err').textContent = msg; $('err').hidden = false; if (el){ el.setAttribute('aria-invalid', 'true'); el.focus(); } return false; }
+
+  form.addEventListener('change', function(e){
+    if (e.target.name !== 'cnh') return;
+    var sem = e.target.value === 'não', f = $('f-mot');
+    f.disabled = sem; if (sem) [].forEach.call(f.querySelectorAll('input'), function(i){ i.checked = false; });
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault(); $('err').hidden = true;
+    var nome = $('nome').value.trim(), email = $('email').value.trim(), whats = $('whats').value.trim(), pace = $('pace').value.trim(), estorno = $('estorno').value.trim();
+    if (!nome) return erro('Falta o nome.', $('nome'));
+    if (!/^\S+@\S+\.\S+$/.test(email)) return erro('Esse email parece errado.', $('email'));
+    if (whats.replace(/\D/g, '').length < 10) return erro('WhatsApp com DDD.', $('whats'));
+    if (!pace) return erro('Falta o PACE em 5 km.', $('pace'));
+    var tmais = $('tmais').value, tmenos = $('tmenos').value;
+    if (!tmais) return erro('Escolhe o trecho que você mais quer fazer.', $('tmais'));
+    if (!tmenos) return erro('Escolhe o trecho que você menos quer fazer.', $('tmenos'));
+    if (tmais === tmenos) return erro('O trecho que mais quer e o que menos quer precisam ser diferentes.', $('tmenos'));
+    var cnh = (form.querySelector('input[name=cnh]:checked') || {}).value, mot = (form.querySelector('input[name=motorista]:checked') || {}).value;
+    if (!cnh) return erro('Diz se você tem carteira de motorista.', form.querySelector('input[name=cnh]'));
+    if (cnh === 'sim' && !mot) return erro('Diz se quer ser um dos 4 motoristas.', form.querySelector('input[name=motorista]'));
+    if (cnh === 'não') mot = 'não';
+    var mod = (form.querySelector('input[name=mod]:checked') || {}).value, tam = (form.querySelector('input[name=tam]:checked') || {}).value;
+    if (!mod) return erro('Escolhe o modelo da camiseta.', form.querySelector('input[name=mod]'));
+    if (!tam) return erro('Escolhe o tamanho da camiseta.', form.querySelector('input[name=tam]'));
+    tam = '2x ' + mod + ' ' + tam;
+    if (!espera){
+      if (!comprovante) return erro('Falta o comprovante do pix da entrada.', $('comprovante'));
+      if (!estorno) return erro('Falta a chave pix pra devolução.', $('estorno'));
+    }
+    if (!$('termo').checked) return erro('Marca a caixinha antes de enviar.', $('termo'));
+
+    var dados = { pedido_id: pedidoId, nome: nome, email: email, whatsapp: whats, pace: pace, trecho_mais: tmais, trecho_menos: tmenos, cnh: cnh, motorista: mot, camiseta: tam, estorno: estorno };
+    if (!espera){ dados.comprovante_tipo = comprovante.type; dados.comprovante = comprovante.data; }
+    var btn = $('submit'); btn.disabled = true; btn.textContent = 'enviando...';
+    try { sessionStorage.setItem('vi27_inscricao', JSON.stringify({ id: pedidoId, nome: nome, espera: espera })); } catch(_){}
+    var ir = function(){ location.href = 'obrigado.html'; };
+    if (!conectado){
+      var msg = (espera ? 'Reserva ' : 'Entrada R$ 890 · ') + pedidoId + ' · Volta à Ilha 2027\n' + nome + ' · ' + email + ' · ' + whats + '\nPACE 5 km: ' + pace + '\nTrecho que mais quer: ' + tmais + ' · menos quer: ' + tmenos + '\nCNH: ' + cnh + ' · motorista: ' + mot + '\nCamiseta: ' + tam + '\nPix devolução: ' + estorno + (espera ? '' : '\n\nSegue o comprovante:');
+      location.href = 'https://wa.me/5531996202657?text=' + encodeURIComponent(msg); return;
+    }
+    var timer = setTimeout(ir, 15000);
+    fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(dados) })
+      .then(function(){ clearTimeout(timer); ir(); })
+      .catch(function(){ clearTimeout(timer); btn.disabled = false; btn.textContent = ROTULO; erro('Erro ao enviar. Tenta de novo. Não faz outro pix.'); });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* tokens.css — Time Piranhas / sistema visual / v1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Onest:wght@400;500;600;700&family=Vollkorn:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+:root{
+
+  /* ── ink (preto warm, nunca #000 puro) ─────── */
+  --ink:        oklch(0.05 0.005 65);
+  --ink-2:      oklch(0.10 0.005 65);
+  --ink-3:      oklch(0.18 0.005 65);
+  --ink-4:      oklch(0.32 0.006 65);
+
+  /* ── paper (branco warm, nunca #fff puro) ──── */
+  --paper:      oklch(0.98 0.005 65);
+  --paper-2:    oklch(0.92 0.006 65);
+  --grey:       oklch(0.65 0.008 65);
+  --grey-soft:  oklch(0.45 0.008 65);
+
+  /* ── acentos por página ────────────────────── */
+  --club:       #EEFF01;   /* só na /club */
+  --training:   #8ACE00;   /* só na /training */
+
+  /* ── tipografia ────────────────────────────── */
+  --font-display:   "Bebas Neue", "Anton", "Impact", system-ui, sans-serif;
+  --font-body:      "Onest", system-ui, sans-serif;
+  --font-editorial: "Vollkorn", "Times New Roman", serif;
+
+  /* ── escala fluida (clamp pra mobile→desktop) ─ */
+  --text-xs:    clamp(0.72rem, 0.7rem + 0.1vw, 0.78rem);
+  --text-sm:    clamp(0.84rem, 0.8rem + 0.15vw, 0.92rem);
+  --text-base:  clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
+  --text-lg:    clamp(1.1rem, 1rem + 0.4vw, 1.2rem);
+  --text-xl:    clamp(1.25rem, 1.1rem + 0.6vw, 1.4rem);
+  --text-2xl:   clamp(1.5rem, 1.3rem + 0.9vw, 1.8rem);
+  --text-3xl:   clamp(1.85rem, 1.5rem + 1.4vw, 2.4rem);
+  --text-4xl:   clamp(2.4rem, 1.8rem + 2.4vw, 3.5rem);
+  --text-5xl:   clamp(3rem, 2rem + 4vw, 5rem);
+  --text-6xl:   clamp(3.8rem, 2.5rem + 5.5vw, 6.5rem);
+  --text-7xl:   clamp(4.5rem, 3rem + 7vw, 8.5rem);
+  --text-8xl:   clamp(5.5rem, 3.5rem + 9vw, 11rem);
+
+  /* ── espaçamento ───────────────────────────── */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── easing exponencial (skill exige) ──────── */
+  --ease-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-expo:  cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ── duração ───────────────────────────────── */
+  --t-fast:   180ms;
+  --t-base:   360ms;
+  --t-slow:   720ms;
+  --t-reveal: 1100ms;
+
+  /* ── grid ──────────────────────────────────── */
+  --gutter:   clamp(1.5rem, 4vw, 4rem);
+  --max-w:    1440px;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recebido · Volta à Ilha 2027</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#6B1F3F">
+<link rel="icon" href="assets/img/logo/piranha-mark.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#6B1F3F;color:var(--paper);font-family:var(--font-body);min-height:100svh;display:grid;place-items:center;-webkit-font-smoothing:antialiased}
+main{max-width:680px;width:100%;padding:72px var(--gutter)}
+img{width:56px;margin-bottom:36px}
+.k{font-weight:600;font-size:var(--text-xs);letter-spacing:.18em;text-transform:uppercase;color:var(--paper-2);margin-bottom:14px}
+h1{font-family:var(--font-display);font-weight:400;font-size:clamp(4.5rem,15vw,9rem);line-height:.86;margin-bottom:24px}
+.id{display:inline-block;background:var(--paper);color:#6B1F3F;font-family:var(--font-display);font-size:var(--text-2xl);letter-spacing:.06em;padding:4px 12px;margin-bottom:24px}
+.id[hidden]{display:none}
+p.next{font-size:var(--text-lg);line-height:1.5;color:var(--paper-2);margin-bottom:28px}
+.cta{display:inline-flex;background:#E5572B;color:var(--ink);font-weight:700;font-size:var(--text-sm);letter-spacing:.14em;text-transform:uppercase;padding:1.05em 1.5em;text-decoration:none;margin-bottom:28px}
+.cta[hidden]{display:none}
+.small{font-size:var(--text-xs);color:var(--paper-2)}
+.small a{color:var(--paper);text-decoration:underline}
+</style>
+</head>
+<body>
+<main>
+  <img src="assets/img/logo/piranha-mark.png" alt="Piranhas">
+  <p class="k">Time Piranhas · volta à ilha 2027</p>
+  <h1 id="t">Recebido.</h1>
+  <p class="id" id="id" hidden></p>
+  <p class="next" id="next">O time confere o pix e o resumo chega no seu email. O valor total sai assim que fecharem as cotações de hospedagem, carro e van.</p>
+  <a class="cta" id="grupo" href="#" target="_blank" rel="noopener" hidden>→ entrar no grupo do Time Piranhas</a>
+  <p class="small">dúvidas: <a href="https://wa.me/5531996202657" target="_blank" rel="noopener">whatsapp do Piranhas</a></p>
+</main>
+<script>
+(function(){
+  // Link do grupo de WhatsApp dos 10 atletas. Vazio = botão escondido.
+  var GRUPO_URL = '';
+  var p; try { p = JSON.parse(sessionStorage.getItem('vi27_inscricao')); } catch(_){}
+  var espera = p && p.espera;
+  if (p){ var id = document.getElementById('id'); id.textContent = p.id; id.hidden = false; }
+  if (espera){
+    document.getElementById('t').textContent = 'Você está na reserva.';
+    document.getElementById('next').textContent = 'Seu nome entrou na reserva. Se abrir vaga, a gente chama pela ordem da reserva.';
+  } else if (GRUPO_URL){
+    var g = document.getElementById('grupo'); g.href = GRUPO_URL; g.hidden = false;
+  }
+})();
+</script>
+</body>
+</html>
